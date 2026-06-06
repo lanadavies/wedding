@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion"; // Modern import
 import Envelope from './components/Envelope';
 import MainContent from "./components/MainContent";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 export default function App() {
 	const [isZoomed, setIsZoomed] = useState(false);
@@ -28,6 +29,7 @@ export default function App() {
 					>
 						<NavBar />
 						<MainContent />
+						<Footer />
 					</motion.div>
 				)}
 			</AnimatePresence>

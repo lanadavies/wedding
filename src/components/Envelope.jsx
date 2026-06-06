@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import MontsalvatBackground from "../assets/montsalvat_background.jpg";
+import Monogram from "./Monogram";
 
 export default function Envelope({ onComplete }) {
   const [open, setOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function Envelope({ onComplete }) {
         onAnimationComplete={() => open && setTimeout(onComplete, 800)}
         className="absolute inset-x-4 top-4 bottom-4 bg-[#fdfbf7] shadow-md z-10 flex flex-col items-center justify-center border border-stone-200"
       >
-        <span className="font-serif text-stone-400 italic">Save the Date</span>
+        <span className="font-serif text-stone-400 italic">You're invited!</span>
         <h2 className="text-2xl font-serif text-stone-800">A + D</h2>
       </motion.div>
 
@@ -41,7 +42,7 @@ export default function Envelope({ onComplete }) {
           whileHover={{ scale: 1.1 }}
           exit={{ opacity: 0, scale: 0.5 }}
         >
-          AD
+          <Monogram size="140px" oval={false} />
         </motion.div>
       )}
     </div>
