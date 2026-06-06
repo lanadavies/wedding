@@ -16,7 +16,7 @@ export default function App() {
 						key="envelope-view"
 						exit={{ scale: 4, opacity: 0, filter: "blur(20px)" }}
 						transition={{ duration: 1.2, ease: [0.43, 0.13, 0.23, 0.96] }}
-						className="flex h-full items-center justify-center"
+						className="flex h-full items-center justify-center bg-red-900"
 					>
 						<Envelope onComplete={() => setIsZoomed(true)} />
 					</motion.div>
