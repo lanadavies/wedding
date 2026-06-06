@@ -6,3 +6,15 @@
   padding: 2rem;
   text-align: center;
 }
+
+#date::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 6rem;
+  height: 0.35rem;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.85);
+}
