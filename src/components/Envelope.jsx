@@ -35,9 +35,9 @@ export default function Envelope({ onComplete }) {
           alt="Paper texture" 
           className="absolute inset-0 w-full h-full object-cover -z-10" 
         />
-        <div className="z-10 flex flex-col items-center justify-center relative drop-shadow-sm">
-          <span className="font-serif text-stone-500 italic">You're invited!</span>
-          <h2 className="text-2xl font-serif text-stone-800">A + D</h2>
+        <div className="z-10 flex flex-col font-[Kapakana] items-center justify-center relative drop-shadow-sm">
+          <span className="text-stone-500 text-lg">You're invited!</span>
+          <h2 className="text-2xl text-stone-800">A + D</h2>
         </div>
       </motion.div>
 
@@ -73,7 +73,7 @@ export default function Envelope({ onComplete }) {
       {/* 5. Wax Seal */}
       {!open && (
         <motion.div 
-          className="absolute left-1/2 top-30 -translate-x-1/2 -translate-y-1/2 z-50 flex items-center justify-center"
+          className="absolute left-1/2 top-45 -translate-x-1/2 -translate-y-1/2 z-50 flex items-center justify-center"
           whileHover={{ scale: 1.05 }}
           exit={{ opacity: 0, scale: 0.5 }}
         >
@@ -83,8 +83,8 @@ export default function Envelope({ onComplete }) {
             className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-xl" 
           />
           
-          <div className="absolute flex items-center justify-center pointer-events-none opacity-80 mix-blend-overlay">
-            <Monogram size="100px" oval={false} />
+          <div className="absolute flex items-center justify-center pr-1 pb-2 pointer-events-none opacity-80 mix-blend-overlay">
+            <Monogram color="#000" size="90px" oval={false} />
           </div>
         </motion.div>
       )}

@@ -4,6 +4,7 @@ import Envelope from './components/Envelope';
 import MainContent from "./components/MainContent";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Background from "./assets/renaissance_background.jpg";
 
 export default function App() {
 	const [isZoomed, setIsZoomed] = useState(false);
@@ -17,6 +18,12 @@ export default function App() {
 						exit={{ scale: 4, opacity: 0, filter: "blur(20px)" }}
 						transition={{ duration: 1.2, ease: [0.43, 0.13, 0.23, 0.96] }}
 						className="flex h-full items-center justify-center bg-red-900"
+						style={{
+                            backgroundImage: `url(${Background})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                        }}
 					>
 						<Envelope onComplete={() => setIsZoomed(true)} />
 					</motion.div>
