@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion"; // Modern import
 import Envelope from './components/Envelope';
 import MainContent from "./components/MainContent";
+import NavBar from "./components/NavBar";
 
 export default function App() {
 	const [isZoomed, setIsZoomed] = useState(false);
@@ -25,6 +26,7 @@ export default function App() {
 						animate={{ opacity: 1 }}
 						className="h-screen w-full overflow-y-auto bg-white"
 					>
+						<NavBar />
 						<MainContent />
 					</motion.div>
 				)}

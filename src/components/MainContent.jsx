@@ -5,13 +5,22 @@ export default function MainContent() {
         <div className="h-full w-full flex flex-col items-center">
             <div 
                 style={{
-                    backgroundImage: `url(${MontsalvatImage})`
+                    backgroundImage: `url(https://static.showit.co/2400/HQomN8EVqQuR7DyRn2_FKA/shared/storybook-couple-garden-walk-shauna-maxwell-photography.jpg)`
                 }}
-                className="p-8 max-w-full py-[15rem] w-full text-white max-w-3xl flex flex-col items-center bg-cover bg-center">
-                <h1 className="text-4xl font-serif mb-6">Welcome to Our Wedding</h1>
-                <p className="text-lg mb-4">
-                    We are so excited to share this special day with you! Below you'll find all the details about our wedding, including the date, location, and schedule of events.
-                </p>
+                className="p-8 relative max-w-full py-[15rem] w-full text-white max-w-3xl flex flex-col items-center bg-cover bg-center">
+                    <h1 className="!text-[6rem] font-[Ballet] mb-6">Allana & Dylan</h1>
+                    <p className="text-3xl mb-4 uppercase font-[EB_Garamond]">
+                        Are getting married
+                    </p>
+                    <p className="bottom-0 absolute text-lg mb-4 uppercase font-[EB_Garamond]">
+                        Montsalvat, ELtham  |  August 8, 2026
+                    </p>
+                    <p className="left-0 top-1/2 rotate-270 absolute uppercase font-[EB_Garamond]">
+                        Till Death
+                    </p>
+                    <p className="right-0 top-1/2 rotate-90 absolute uppercase font-[EB_Garamond]">
+                        Do us part
+                    </p>
             </div>
             <div id="date" className="relative px-8 py-10 flex flex-col items-center max-w-full w-full max-w-3xl">
 
