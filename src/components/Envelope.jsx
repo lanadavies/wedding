@@ -13,6 +13,7 @@ export default function Envelope({ onComplete }) {
   const [open, setOpen] = useState(false);
 
   return (
+    <>
     <div className="relative w-72 h-50 sm:w-96 sm:h-64 cursor-pointer group" onClick={() => setOpen(true)}>
       
       {/* 1. Back Plate (Deepest layer) */}
@@ -27,17 +28,17 @@ export default function Envelope({ onComplete }) {
         initial={{ y: 0 }}
         animate={open ? { y: -160 } : { y: 0 }} 
         transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
-        onAnimationComplete={() => open && setTimeout(onComplete, 800)}
+        onAnimationComplete={() => open && setTimeout(onComplete, 1000)}
         className="absolute inset-x-4 top-4 bottom-4 z-20 flex flex-col items-center justify-center overflow-hidden rounded-sm"
       >
         <img 
           src={PaperImg} 
           alt="Paper texture" 
-          className="absolute inset-0 w-full h-full object-cover -z-10" 
+          className="absolute inset-0 w-full h-full object-cover-z-10 px-5 " 
         />
-        <div className="z-10 flex flex-col font-[Kapakana] items-center justify-center relative drop-shadow-sm">
-          <span className="text-stone-500 text-lg">You're invited!</span>
-          <h2 className="text-2xl text-stone-800">A + D</h2>
+        <div className="z-10 flex flex-col text-4xl text-stone-800 font-[Kapakana] items-center justify-center relative drop-shadow-sm">
+          <span className="">You're invited!</span>
+          <h2 className="">Allana + Dylan</h2>
         </div>
       </motion.div>
 
@@ -73,7 +74,7 @@ export default function Envelope({ onComplete }) {
       {/* 5. Wax Seal */}
       {!open && (
         <motion.div 
-          className="absolute left-1/2 top-45 -translate-x-1/2 -translate-y-1/2 z-50 flex items-center justify-center"
+          className="absolute left-1/2 top-35 sm:top-45 -translate-x-1/2 -translate-y-1/2 z-50 flex items-center justify-center"
           whileHover={{ scale: 1.05 }}
           exit={{ opacity: 0, scale: 0.5 }}
         >
@@ -89,5 +90,8 @@ export default function Envelope({ onComplete }) {
         </motion.div>
       )}
     </div>
+      <motion.div className={`mx-auto px-10 text-center pt-4 lg:pt-0 font-[EB_Garamond] text-amber-100 text-2xl lg:text-lg uppercase ${open ? "invisible" : "block"}`}>Click the envelope to open</motion.div>
+    </>
+
   );
 }

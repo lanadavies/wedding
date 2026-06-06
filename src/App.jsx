@@ -10,7 +10,7 @@ export default function App() {
 	const [isZoomed, setIsZoomed] = useState(false);
 
 	return (
-		<div className="relative min-h-screen overflow-y-auto w-full paper-background">
+		<div className="relative h-screen overflow-y-auto w-full paper-background">
 			<AnimatePresence>
 				{!isZoomed ? (
 					<motion.div
@@ -26,7 +26,6 @@ export default function App() {
                         }}
 					>
 						<Envelope onComplete={() => setIsZoomed(true)} />
-						<div className="mx-auto px-10 text-center pt-4 lg:pt-0 font-[EB_Garamond] text-amber-100 text-2xl lg:text-lg uppercase">Click the envelope to open</div>
 					</motion.div>
 				) : (
 					<motion.div

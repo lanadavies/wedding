@@ -11,7 +11,7 @@ export default function MainContent() {
                 style={{
                     backgroundImage: `url(https://static.showit.co/2400/HQomN8EVqQuR7DyRn2_FKA/shared/storybook-couple-garden-walk-shauna-maxwell-photography.jpg)`
                 }}
-                className="p-8 relative max-w-full py-[15rem] w-full max-w-3xl flex flex-col items-center bg-cover bg-center">
+                className="p-8 lg:mx-[3rem] relative py-[15rem] w-full lg:w-[calc(100%-3rem)] flex flex-col items-center bg-cover bg-center">
                     <p className="lg:text-[4rem] mx-6 text-center text-[5rem] font-[Ballet] mb-6">Allana & Dylan</p>
                     <p className="lg:text-3xl text-2xl mb-4 uppercase font-[EB_Garamond]">
                         Are getting married
@@ -19,10 +19,10 @@ export default function MainContent() {
                     <p className="bottom-0 absolute text-lg mb-4 uppercase">
                         Montsalvat, ELtham  |  August 8, 2026
                     </p>
-                    <p className="lg:left-0 -left-3 top-1/2 rotate-270 absolute uppercase ">
+                    <p className="-left-3 top-1/2 rotate-270 absolute uppercase ">
                         Till Death
                     </p>
-                    <p className="lg:right-0 -right-3 top-1/2 rotate-90 absolute uppercase">
+                    <p className="-right-3 top-1/2 rotate-90 absolute uppercase">
                         Do us part
                     </p>
             </div>
@@ -35,10 +35,10 @@ export default function MainContent() {
                         maskRepeat: 'no-repeat'
                     }}
                  />
-                <div className="flex flex-col w-[16rem] lg:w-[20rem] my-6">   
-                    <h2 className="text-3xl font-serif my-4 uppercase text-center">It's Finally happening</h2>
-                    <p className="text-lg mb-8 mt-4 text-center">
-                        We are delighted to welcome you to our wedding website. Here you will find all the information you as we prepare to celebrate our marrige.
+                <div className="flex flex-col w-[16rem] lg:w-[20rem] mb-6 mt-[4rem] lg:mt-6 text-center lg:text-left">   
+                    <h2 className="text-3xl font-serif my-4 uppercase">It's Finally happening</h2>
+                    <p className="text-lg mb-4 lg:mb-8 mt-4">
+                        We are delighted to welcome you to our wedding website. Here you will find all the information you need as we prepare to celebrate our marrige.
                         <br />
                         Thank you for being a part of our lives, and we can't wait to celebrate with you on our special day.
                     </p>
@@ -74,28 +74,24 @@ export default function MainContent() {
             </div>
             <div className="relative flex-col px-8 py-[8rem] flex items-center max-w-full w-full max-w-3xl"
                 style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${RenaissanceBackground})`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${RenaissanceBackground})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                 }}
             >
-
-                <p className="!text-lg font-[Ballet]">
+                <p className="text-[3rem] font-[Kapakana] h-8">
                     The
                 </p>
-                <p className="!text-lg">
+                <p className="text-[3rem] mb-2">
                     Program
                 </p>
-                <h2 className="text-2xl font-serif mt-8 mb-4">Schedule of Events</h2>
-                <ul className="list-disc list-inside text-lg mb-4">
-                    <li>4:00 PM - Ceremony</li>
-                    <li>5:30 PM - Cocktail Hour</li>
-                    <li>7:00 PM - Dinner & Dancing</li>
+                <ul className="list-disc list-inside text-lg my-4">
+                    <li>3:00 PM - Ceremony</li>
+                    <li>4:00 PM - Cocktail Hour</li>
+                    <li>5:00 PM - Dinner & Dancing</li>
+                    <li>10:00 PM - After Party</li>
                 </ul>
-                <p className="text-lgmt-8">
-                    We can't wait to celebrate with you!
-                </p>
             </div>
         </div>
     );
