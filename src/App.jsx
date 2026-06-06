@@ -19,7 +19,7 @@ export default function App() {
 						transition={{ duration: 1.2, ease: [0.43, 0.13, 0.23, 0.96] }}
 						className="flex flex-col pt-10 h-full items-center justify-center"
 						style={{
-                            backgroundImage: `url(${Background})`,
+                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${Background})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',
