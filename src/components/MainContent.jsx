@@ -19,15 +19,15 @@ export default function MainContent() {
                     <p className="bottom-0 absolute text-lg mb-4 uppercase">
                         Montsalvat, ELtham  |  August 8, 2026
                     </p>
-                    <p className="-left-3 top-1/2 rotate-270 absolute uppercase ">
+                    <p className="-left-5 lg:-left-3 top-1/2 rotate-270 absolute uppercase ">
                         Till Death
                     </p>
-                    <p className="-right-3 top-1/2 rotate-90 absolute uppercase">
+                    <p className="-right-5 lg:-right-3 top-1/2 rotate-90 absolute uppercase">
                         Do us part
                     </p>
             </div>
             <div className="relative justify-evenly px-8 py-[8rem] flex lg:flex-row flex-col-reverse items-center max-w-full w-full max-w-3xl">
-                <div className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-80 h-[15rem] lg:h-[20rem] my-5 absolute -bottom-10 -left-10 lg:-left-15"
+                <div className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-80 h-[15rem] lg:h-[20rem] my-5 absolute -bottom-14 lg:-bottom-17 -left-10 lg:-left-15"
                     style={{
                         WebkitMaskImage: `url(${FloralCornerImage})`,
                         maskImage: `url(${FloralCornerImage})`,
@@ -35,7 +35,7 @@ export default function MainContent() {
                         maskRepeat: 'no-repeat'
                     }}
                  />
-                <div className="flex flex-col w-[16rem] lg:w-[20rem] mb-6 mt-[4rem] lg:mt-6 text-center lg:text-left">   
+                <div className="flex flex-col w-[16rem] lg:w-[20rem] mb-5 mt-[4rem] lg:mt-6 text-center lg:text-left">   
                     <h2 className="text-3xl font-serif my-4 uppercase">It's Finally happening</h2>
                     <p className="text-lg mb-4 lg:mb-8 mt-4">
                         We are delighted to welcome you to our wedding website. Here you will find all the information you need as we prepare to celebrate our marrige.
@@ -86,12 +86,12 @@ export default function MainContent() {
                 <p className="text-[3rem] mb-2">
                     Program
                 </p>
-                <ul className="list-disc list-inside text-lg my-4">
-                    <li>3:00 PM - Ceremony</li>
-                    <li>4:00 PM - Cocktail Hour</li>
-                    <li>5:00 PM - Dinner & Dancing</li>
-                    <li>10:00 PM - After Party</li>
-                </ul>
+                <div className="flex justiry-center items-center xt-lg my-4">
+                    <div className="mx-2">3:00 PM - Ceremony</div>
+                    <div className="mx-2">4:00 PM - Cocktail Hour</div>
+                    <div className="mx-2">5:00 PM - Dinner & Dancing</div>
+                    <div className="mx-2">10:00 PM - After Party</div>
+                </div>
             </div>
         </div>
     );
