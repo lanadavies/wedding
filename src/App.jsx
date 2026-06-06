@@ -10,7 +10,7 @@ export default function App() {
 	const [isZoomed, setIsZoomed] = useState(false);
 
 	return (
-		<div className="relative h-screen overflow-y-auto w-full bg-stone-200">
+		<div className="relative min-h-screen overflow-y-auto w-full paper-background">
 			<AnimatePresence>
 				{!isZoomed ? (
 					<motion.div
@@ -33,7 +33,7 @@ export default function App() {
 						key="content-view"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						className="h-screen w-full overflow-y-auto bg-white"
+						className="min-h-screen w-full overflow-y-auto"
 					>
 						<NavBar />
 						<MainContent />
