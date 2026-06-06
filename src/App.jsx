@@ -17,7 +17,7 @@ export default function App() {
 						key="envelope-view"
 						exit={{ scale: 4, opacity: 0, filter: "blur(20px)" }}
 						transition={{ duration: 1.2, ease: [0.43, 0.13, 0.23, 0.96] }}
-						className="flex h-full items-center justify-center bg-red-900"
+						className="flex flex-col pt-10 h-full items-center justify-center"
 						style={{
                             backgroundImage: `url(${Background})`,
                             backgroundSize: 'cover',
@@ -26,6 +26,7 @@ export default function App() {
                         }}
 					>
 						<Envelope onComplete={() => setIsZoomed(true)} />
+						<div className="mx-auto px-10 text-center pt-4 lg:pt-0 font-[EB_Garamond] text-amber-100 text-2xl lg:text-lg uppercase">Click the envelope to open</div>
 					</motion.div>
 				) : (
 					<motion.div

@@ -27,7 +27,7 @@ export default function Envelope({ onComplete }) {
         initial={{ y: 0 }}
         animate={open ? { y: -160 } : { y: 0 }} 
         transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
-        onAnimationComplete={() => open && setTimeout(onComplete, 600)}
+        onAnimationComplete={() => open && setTimeout(onComplete, 800)}
         className="absolute inset-x-4 top-4 bottom-4 z-20 flex flex-col items-center justify-center overflow-hidden rounded-sm"
       >
         <img 

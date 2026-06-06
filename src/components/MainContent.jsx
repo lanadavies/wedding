@@ -1,6 +1,8 @@
 import MontsalvatImage from "../assets/montsalvat_background.jpg";
 import FloralCornerImage from "../assets/vintage_frame_2_05.png";
 import ImageBorder from "../assets/vintage_frame_15.png";
+import RenaissanceBackground from "../assets/renaissance_background_2.jpg";
+
 
 export default function MainContent() {
     return (
@@ -10,22 +12,22 @@ export default function MainContent() {
                     backgroundImage: `url(https://static.showit.co/2400/HQomN8EVqQuR7DyRn2_FKA/shared/storybook-couple-garden-walk-shauna-maxwell-photography.jpg)`
                 }}
                 className="p-8 relative max-w-full py-[15rem] w-full max-w-3xl flex flex-col items-center bg-cover bg-center">
-                    <h1 className="!text-[6rem] font-[Ballet] mb-6">Allana & Dylan</h1>
-                    <p className="text-3xl mb-4 uppercase font-[EB_Garamond]">
+                    <p className="lg:text-[4rem] mx-6 text-center text-[5rem] font-[Ballet] mb-6">Allana & Dylan</p>
+                    <p className="lg:text-3xl text-2xl mb-4 uppercase font-[EB_Garamond]">
                         Are getting married
                     </p>
                     <p className="bottom-0 absolute text-lg mb-4 uppercase">
                         Montsalvat, ELtham  |  August 8, 2026
                     </p>
-                    <p className="left-0 top-1/2 rotate-270 absolute uppercase ">
+                    <p className="lg:left-0 -left-3 top-1/2 rotate-270 absolute uppercase ">
                         Till Death
                     </p>
-                    <p className="right-0 top-1/2 rotate-90 absolute uppercase">
+                    <p className="lg:right-0 -right-3 top-1/2 rotate-90 absolute uppercase">
                         Do us part
                     </p>
             </div>
-            <div className="relative paper-background justify-evenly px-8 py-[8rem] flex items-center max-w-full w-full max-w-3xl">
-                <div className="bg-amber-100 w-[20rem] opacity-80 h-[20rem] absolute -bottom-10 -left-15"
+            <div className="relative paper-background justify-evenly px-8 py-[8rem] flex lg:flex-row flex-col-reverse items-center max-w-full w-full max-w-3xl">
+                <div className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-80 h-[15rem] lg:h-[20rem] my-5 absolute -bottom-10 -left-10 lg:-left-15"
                     style={{
                         WebkitMaskImage: `url(${FloralCornerImage})`,
                         maskImage: `url(${FloralCornerImage})`,
@@ -33,13 +35,15 @@ export default function MainContent() {
                         maskRepeat: 'no-repeat'
                     }}
                  />
-                <div className="flex flex-col w-[20rem]">   
-                    <h2 className="text-3xl font-serif my-4 uppercase">Lorem ipsum dolor sit amet</h2>
-                    <p className="text-lg mb-8 mt-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div className="flex flex-col w-[16rem] lg:w-[20rem] my-6">   
+                    <h2 className="text-3xl font-serif my-4 uppercase text-center">It's Finally happening</h2>
+                    <p className="text-lg mb-8 mt-4 text-center">
+                        We are delighted to welcome you to our wedding website. Here you will find all the information you as we prepare to celebrate our marrige.
+                        <br />
+                        Thank you for being a part of our lives, and we can't wait to celebrate with you on our special day.
                     </p>
                 </div>
-                <div className="w-[20rem] relative">
+                <div className="w-[20rem] relative lg:my-0 mb-16">
                     <div className="h-[25rem] w-[20rem] rounded-full inset-0 m-auto"
                         style={{
                             backgroundImage: `url(https://static.showit.co/1200/s8_Vdu2LHYCuGn40EVsoPQ/334279/wedding-couple-with-flowers.jpg)`,
@@ -68,6 +72,15 @@ export default function MainContent() {
                     </div>
                 </div>
             </div>
+            <div className="relative flex-col px-8 py-[8rem] flex items-center max-w-full w-full max-w-3xl"
+                style={{
+                    backgroundImage: `url(${RenaissanceBackground})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                }}
+            >
+
                 <p className="!text-lg font-[Ballet]">
                     The
                 </p>
@@ -83,6 +96,7 @@ export default function MainContent() {
                 <p className="text-lgmt-8">
                     We can't wait to celebrate with you!
                 </p>
+            </div>
         </div>
     );
 }
