@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Monogram = ({ color = '#FEF3C7', size = '100%', oval = true }) => {
+const Monogram = ({ color = '#FEF3C7', size = '100%' }) => {
 	return (
 		<svg 
 			xmlns="http://www.w3.org/2000/svg" 
@@ -8,20 +8,6 @@ const Monogram = ({ color = '#FEF3C7', size = '100%', oval = true }) => {
 			width={size} 
 			height={size}
 		>
-			{oval && (
-				<>
-					{/* Outer Oval */}
-					<ellipse 
-						cx="100" cy="125" rx="80" ry="110" 
-						fill="none" stroke={color} strokeWidth="2"
-					/>
-					{/* Inner Oval */}
-					<ellipse 
-						cx="100" cy="125" rx="72" ry="102" 
-						fill="none" stroke={color} strokeWidth="1"
-					/>
-				</>
-			)}
 
 			{/* Letter A */}
 			<text 
