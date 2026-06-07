@@ -27,7 +27,7 @@ export default function MainContent() {
                     </p>
             </div>
             <div className="relative justify-evenly px-8 py-[8rem] flex lg:flex-row flex-col-reverse items-center max-w-full w-full max-w-3xl">
-                <div className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-80 h-[15rem] lg:h-[20rem] my-5 absolute -bottom-14 lg:-bottom-17 -left-10 lg:-left-15"
+                <div className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-80 h-[15rem] lg:h-[22rem] my-5 absolute -bottom-14 lg:-bottom-17 -left-10 lg:-left-15"
                     style={{
                         WebkitMaskImage: `url(${FloralCornerImage})`,
                         maskImage: `url(${FloralCornerImage})`,
@@ -43,10 +43,10 @@ export default function MainContent() {
                         Thank you for being a part of our lives, and we can't wait to celebrate with you on our special day.
                     </p>
                 </div>
-                <div className="w-[22rem] relative lg:my-0 mb-16">
+                <div className="w-[22rem] h-[20rem] relative lg:my-0 mb-16">
                     <div className="h-[27rem] w-[22rem] inset-0 m-auto absolute border border-amber-100 border-1 rounded-[50%]"
                         style={{
-                            clipPath: 'ellipse(90% 46.5% at 50% 50%)',
+                            clipPath: 'ellipse(90% 46.75% at 50% 50%)',
                         }}
                     >
                     </div>
@@ -60,7 +60,7 @@ export default function MainContent() {
                         }}
                         >
                     </div>
-                    <div className="bg-amber-100 opacity-80 w-[15rem] h-[10rem] absolute top-53 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-180"
+                    <div className="bg-amber-100 opacity-80 w-[12.75rem] h-[8rem] absolute -bottom-18 left-1/2 rotate-180 -translate-x-1/2"
                         style={{
                             WebkitMaskImage: `url(${ImageBorder})`,
                             maskImage: `url(${ImageBorder})`,
@@ -68,7 +68,7 @@ export default function MainContent() {
                             maskRepeat: 'no-repeat'
                         }}
                     />
-                    <div className="bg-amber-100 opacity-80 w-[15rem] h-[10rem] absolute bottom-13 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    <div className="bg-amber-100 opacity-80 w-[12.75rem] h-[8rem] absolute -top-18 left-1/2 -translate-x-1/2"
                         style={{
                             WebkitMaskImage: `url(${ImageBorder})`,
                             maskImage: `url(${ImageBorder})`,
@@ -81,7 +81,7 @@ export default function MainContent() {
             </div>
             <div className="relative flex-col px-8 py-[8rem] flex items-center max-w-full w-full max-w-3xl"
                 style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${RenaissanceBackground})`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${RenaissanceBackground})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -93,10 +93,7 @@ export default function MainContent() {
                 <p className="text-[3rem] mb-2">
                     Program
                 </p>
-                <div className="flex justiry-center items-center xt-lg my-4">
-                    <div className="mx-2 flex flex-col justify-center items-center">
-                        3:00 PM - Ceremony
-                        <div className="bg-amber-100 opacity-80 w-[12rem] h-[12rem]"
+                <div className="bg-amber-100 opacity-80 w-[12rem] h-[6rem]"
                             style={{
                                 WebkitMaskImage: `url(${VintageFrameBorder})`,
                                 maskImage: `url(${VintageFrameBorder})`,
@@ -104,36 +101,25 @@ export default function MainContent() {
                                 maskRepeat: 'no-repeat'
                             }}
                         />
+                <div className="flex justiry-center items-center xt-lg my-4 flex-col lg:flex-row">
+                    <div className="mx-2 flex flex-col justify-center items-center w-42">
+                        <p className='text-2xl'>3:00 PM</p>
+                        <p className='uppercase'>Ceremony</p>
                     </div>
-                    <div className="mx-2 flex flex-col justify-center items-center">4:00 PM - Cocktail Hour
-                        <div className="bg-amber-100 opacity-80 w-[12rem] h-[12rem]"
-                            style={{
-                                WebkitMaskImage: `url(${VintageFrameBorder})`,
-                                maskImage: `url(${VintageFrameBorder})`,
-                                maskSize: 'contain',
-                                maskRepeat: 'no-repeat'
-                            }}
-                        />
+                    <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] bg-amber-100"></div>
+                    <div className="mx-2 flex flex-col justify-center items-center w-42">
+                        <p className='text-2xl'>4:00 PM</p>
+                        <p className='uppercase'>Cocktail Hour</p>
                     </div>
-                    <div className="mx-2 flex flex-col justify-center items-center">5:00 PM - Dinner & Dancing
-                            <div className="bg-amber-100 opacity-80 w-[12rem] h-[12rem]"
-                            style={{
-                                WebkitMaskImage: `url(${VintageFrameBorder})`,
-                                maskImage: `url(${VintageFrameBorder})`,
-                                maskSize: 'contain',
-                                maskRepeat: 'no-repeat'
-                            }}
-                        />
+                    <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] bg-amber-100"></div>
+                    <div className="mx-2 flex flex-col justify-center items-center w-42">
+                        <p className='text-2xl'>5:00 PM</p>
+                        <p className='uppercase'>Dinner & Dancing</p>
                     </div>
-                    <div className="mx-2 flex flex-col justify-center items-center">10:00 PM - After Party
-                        <div className="bg-amber-100 opacity-80 w-[12rem] h-[12rem]"
-                            style={{
-                                WebkitMaskImage: `url(${VintageFrameBorder})`,
-                                maskImage: `url(${VintageFrameBorder})`,
-                                maskSize: 'contain',
-                                maskRepeat: 'no-repeat'
-                            }}
-                        />
+                    <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] bg-amber-100"></div>
+                    <div className="mx-2 flex flex-col justify-center items-center w-42">
+                        <p className='text-2xl'>10:00 PM</p>
+                        <p className='uppercase'>After Party</p>
                     </div>
                 </div>
             </div>
