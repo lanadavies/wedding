@@ -69,16 +69,16 @@ button:focus-visible {
   }
 }
 
-.paper-background-texture {
-  background-image: url("https://static.showit.co/1600/dAieXo7a_-i0EFaKhdyBvA/shared/background-texture_4.png");
+.paper-background {
+  background-image: url("/burgendy_paper.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.paper-background {
+.burgendy-paper-background {
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://static.showit.co/1600/44v-En0JXwcuNw9f8UZOeA/shared/background-texture_2.png");
+  background-image: url("/white_paper.png");
 }

@@ -63,7 +63,7 @@ export default function MainContent() {
                         }}
                         >
                     </div>
-                    <div className="bg-amber-100 opacity-80 w-[12.75rem] h-[8rem] absolute -bottom-18 left-1/2 rotate-180 -translate-x-1/2"
+                    <div className="bg-amber-100 opacity-80 w-[12.75rem] h-[8rem] absolute -bottom-27 left-1/2 rotate-180 -translate-x-1/2"
                         style={{
                             WebkitMaskImage: `url(${ImageBorder})`,
                             maskImage: `url(${ImageBorder})`,
@@ -71,7 +71,7 @@ export default function MainContent() {
                             maskRepeat: 'no-repeat'
                         }}
                     />
-                    <div className="bg-amber-100 opacity-80 w-[12.75rem] h-[8rem] absolute -top-18 left-1/2 -translate-x-1/2"
+                    <div className="bg-amber-100 opacity-80 w-[12.75rem] h-[8rem] absolute -top-27 left-1/2 -translate-x-1/2"
                         style={{
                             WebkitMaskImage: `url(${ImageBorder})`,
                             maskImage: `url(${ImageBorder})`,
@@ -83,7 +83,7 @@ export default function MainContent() {
                 </div>
             </div>
             {/* Details */}
-            <div class='h-[20rem] bg-amber-100 w-full paper-background-texture'>
+            <div class='h-[20rem] bg-amber-100 w-full burgendy-paper-background'>
 
             </div>
             {/* Schedule */}
@@ -132,7 +132,7 @@ export default function MainContent() {
                 </div>
             </div>
             {/* Details */}
-            <div class='h-[20rem] bg-amber-100 w-full paper-background-texture'>
+            <div class='h-[20rem] bg-amber-100 w-full burgendy-paper-background'>
 
             </div>
             {/* RSVP paper on photo backgroun*/}
