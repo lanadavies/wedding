@@ -3,10 +3,12 @@ import FloralCornerImage from "../assets/vintage_frame_2_05.png";
 import ImageBorder from "../assets/vintage_frame_15.png";
 import VintageFrameBorder from "../assets/vintage_frame_set_16.png";
 import RenaissanceBackground from "../assets/renaissance_background_2.jpg";
+import VintageFrame from "../assets/vintage_frame.png";
 
 export default function MainContent() {
     return (
         <div className="h-full w-full flex flex-col items-center text-amber-100 font-[EB_Garamond]">
+            {/* Hero section */}
             <div 
                 style={{
                     backgroundImage: `url(https://static.showit.co/2400/HQomN8EVqQuR7DyRn2_FKA/shared/storybook-couple-garden-walk-shauna-maxwell-photography.jpg)`
@@ -26,8 +28,9 @@ export default function MainContent() {
                         Do us part
                     </p>
             </div>
+            {/* Introduction */}
             <div className="relative justify-evenly px-8 py-[8rem] flex lg:flex-row flex-col-reverse items-center max-w-full w-full max-w-3xl">
-                <div className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-80 h-[15rem] lg:h-[22rem] my-5 absolute -bottom-14 lg:-bottom-17 -left-10 lg:-left-15"
+                <div className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-80 h-[15rem] lg:h-[22rem] my-5 absolute -bottom-14 lg:-bottom-25 -left-10 lg:-left-15"
                     style={{
                         WebkitMaskImage: `url(${FloralCornerImage})`,
                         maskImage: `url(${FloralCornerImage})`,
@@ -79,6 +82,11 @@ export default function MainContent() {
 
                 </div>
             </div>
+            {/* Details */}
+            <div class='h-[20rem] bg-amber-100 w-full paper-background-texture'>
+
+            </div>
+            {/* Schedule */}
             <div className="relative flex-col px-8 py-[8rem] flex items-center max-w-full w-full max-w-3xl"
                 style={{
                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${RenaissanceBackground})`,
@@ -123,6 +131,22 @@ export default function MainContent() {
                     </div>
                 </div>
             </div>
+            {/* Details */}
+            <div class='h-[20rem] bg-amber-100 w-full paper-background-texture'>
+
+            </div>
+            {/* RSVP paper on photo backgroun*/}
+            <div class='h-[20rem] w-full grid place-items-center'>
+                    <div className="bg-amber-100 opacity-80 w-[15rem] h-[15rem] rounded-full"
+                        style={{
+                            WebkitMaskImage: `url(${VintageFrame})`,
+                            maskImage: `url(${VintageFrame})`,
+                            maskSize: 'contain',
+                            maskRepeat: 'no-repeat'
+                        }}
+                    />
+            </div>
+            {/* coundown */}
         </div>
     );
 }
