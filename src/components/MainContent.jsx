@@ -102,21 +102,21 @@ export default function MainContent() {
                             }}
                         />
                 <div className="flex justiry-center items-center xt-lg my-4 flex-col lg:flex-row">
-                    <div className="mx-2 flex flex-col justify-center items-center w-42">
+                    <div className="m-2 flex flex-col justify-center items-center w-42">
                         <p className='text-2xl'>3:00 PM</p>
                         <p className='uppercase'>Ceremony</p>
                     </div>
-                    <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] bg-amber-100"></div>
-                    <div className="mx-2 flex flex-col justify-center items-center w-42">
+                    <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] w-[10rem] h-[1px] my-3 bg-amber-100"></div>
+                    <div className="m-2 flex flex-col justify-center items-center w-42">
                         <p className='text-2xl'>4:00 PM</p>
                         <p className='uppercase'>Cocktail Hour</p>
                     </div>
-                    <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] bg-amber-100"></div>
-                    <div className="mx-2 flex flex-col justify-center items-center w-42">
+                    <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] w-[10rem] h-[1px] my-3 bg-amber-100"></div>
+                    <div className="m-2 flex flex-col justify-center items-center w-42">
                         <p className='text-2xl'>5:00 PM</p>
                         <p className='uppercase'>Dinner & Dancing</p>
                     </div>
-                    <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] bg-amber-100"></div>
+                    <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] w-[10rem] h-[1px] my-3 bg-amber-100"></div>
                     <div className="mx-2 flex flex-col justify-center items-center w-42">
                         <p className='text-2xl'>10:00 PM</p>
                         <p className='uppercase'>After Party</p>
