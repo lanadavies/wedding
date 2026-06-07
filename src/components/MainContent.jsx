@@ -16,7 +16,7 @@ export default function MainContent() {
                     <p className="lg:text-3xl text-2xl mb-4 uppercase font-[EB_Garamond]">
                         Are getting married
                     </p>
-                    <p className="bottom-0 absolute text-lg mb-4 uppercase">
+                    <p className="bottom-0 absolute lg:text-lg text-md mb-4 uppercase">
                         Montsalvat, ELtham  |  August 8, 2026
                     </p>
                     <p className="-left-5 lg:-left-3 top-1/2 rotate-270 absolute uppercase ">
@@ -43,8 +43,14 @@ export default function MainContent() {
                         Thank you for being a part of our lives, and we can't wait to celebrate with you on our special day.
                     </p>
                 </div>
-                <div className="w-[20rem] relative lg:my-0 mb-16">
-                    <div className="h-[25rem] w-[20rem] rounded-full inset-0 m-auto"
+                <div className="w-[22rem] relative lg:my-0 mb-16">
+                    <div className="h-[27rem] w-[22rem] inset-0 m-auto absolute border border-amber-100 border-1 rounded-[50%]"
+                        style={{
+                            clipPath: 'ellipse(90% 46.5% at 50% 50%)',
+                        }}
+                    >
+                    </div>
+                    <div className="h-[25rem] w-[20rem] inset-0 m-auto absolute"
                         style={{
                             backgroundImage: `url(https://static.showit.co/1200/s8_Vdu2LHYCuGn40EVsoPQ/334279/wedding-couple-with-flowers.jpg)`,
                             backgroundSize: 'cover',
@@ -53,23 +59,24 @@ export default function MainContent() {
                             borderRadius: '50%',
                         }}
                         >
-                        <div className="bg-amber-100 opacity-80 w-[15rem] h-[10rem] absolute top-105 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-180"
-                            style={{
-                                WebkitMaskImage: `url(${ImageBorder})`,
-                                maskImage: `url(${ImageBorder})`,
-                                maskSize: 'contain',
-                                maskRepeat: 'no-repeat'
-                            }}
-                        />
-                        <div className="bg-amber-100 opacity-80 w-[15rem] h-[10rem] absolute bottom-65 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                            style={{
-                                WebkitMaskImage: `url(${ImageBorder})`,
-                                maskImage: `url(${ImageBorder})`,
-                                maskSize: 'contain',
-                                maskRepeat: 'no-repeat'
-                            }}
-                        />
                     </div>
+                    <div className="bg-amber-100 opacity-80 w-[15rem] h-[10rem] absolute top-53 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-180"
+                        style={{
+                            WebkitMaskImage: `url(${ImageBorder})`,
+                            maskImage: `url(${ImageBorder})`,
+                            maskSize: 'contain',
+                            maskRepeat: 'no-repeat'
+                        }}
+                    />
+                    <div className="bg-amber-100 opacity-80 w-[15rem] h-[10rem] absolute bottom-13 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        style={{
+                            WebkitMaskImage: `url(${ImageBorder})`,
+                            maskImage: `url(${ImageBorder})`,
+                            maskSize: 'contain',
+                            maskRepeat: 'no-repeat'
+                        }}
+                    />
+
                 </div>
             </div>
             <div className="relative flex-col px-8 py-[8rem] flex items-center max-w-full w-full max-w-3xl"
