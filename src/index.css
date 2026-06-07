@@ -72,13 +72,13 @@ button:focus-visible {
 .paper-background {
   background-image: url("/burgendy_paper.png");
   background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 800px 1500px;
+  background-repeat: repeat;
 }
 
 .burgendy-paper-background {
   background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 300px 100px;
+  background-repeat: repeat;
   background-image: url("/white_paper.png");
 }
