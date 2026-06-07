@@ -1,8 +1,8 @@
 import MontsalvatImage from "../assets/montsalvat_background.jpg";
 import FloralCornerImage from "../assets/vintage_frame_2_05.png";
 import ImageBorder from "../assets/vintage_frame_15.png";
+import VintageFrameBorder from "../assets/vintage_frame_set_16.png";
 import RenaissanceBackground from "../assets/renaissance_background_2.jpg";
-
 
 export default function MainContent() {
     return (
@@ -94,10 +94,47 @@ export default function MainContent() {
                     Program
                 </p>
                 <div className="flex justiry-center items-center xt-lg my-4">
-                    <div className="mx-2">3:00 PM - Ceremony</div>
-                    <div className="mx-2">4:00 PM - Cocktail Hour</div>
-                    <div className="mx-2">5:00 PM - Dinner & Dancing</div>
-                    <div className="mx-2">10:00 PM - After Party</div>
+                    <div className="mx-2 flex flex-col justify-center items-center">
+                        3:00 PM - Ceremony
+                        <div className="bg-amber-100 opacity-80 w-[12rem] h-[12rem]"
+                            style={{
+                                WebkitMaskImage: `url(${VintageFrameBorder})`,
+                                maskImage: `url(${VintageFrameBorder})`,
+                                maskSize: 'contain',
+                                maskRepeat: 'no-repeat'
+                            }}
+                        />
+                    </div>
+                    <div className="mx-2 flex flex-col justify-center items-center">4:00 PM - Cocktail Hour
+                        <div className="bg-amber-100 opacity-80 w-[12rem] h-[12rem]"
+                            style={{
+                                WebkitMaskImage: `url(${VintageFrameBorder})`,
+                                maskImage: `url(${VintageFrameBorder})`,
+                                maskSize: 'contain',
+                                maskRepeat: 'no-repeat'
+                            }}
+                        />
+                    </div>
+                    <div className="mx-2 flex flex-col justify-center items-center">5:00 PM - Dinner & Dancing
+                            <div className="bg-amber-100 opacity-80 w-[12rem] h-[12rem]"
+                            style={{
+                                WebkitMaskImage: `url(${VintageFrameBorder})`,
+                                maskImage: `url(${VintageFrameBorder})`,
+                                maskSize: 'contain',
+                                maskRepeat: 'no-repeat'
+                            }}
+                        />
+                    </div>
+                    <div className="mx-2 flex flex-col justify-center items-center">10:00 PM - After Party
+                        <div className="bg-amber-100 opacity-80 w-[12rem] h-[12rem]"
+                            style={{
+                                WebkitMaskImage: `url(${VintageFrameBorder})`,
+                                maskImage: `url(${VintageFrameBorder})`,
+                                maskSize: 'contain',
+                                maskRepeat: 'no-repeat'
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
