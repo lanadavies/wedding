@@ -10,6 +10,7 @@ import EnvelopeTopFlap from "../assets/envelope_top_flap_burgandy.png";
 import EnvelopeFlap from "../assets/envelope_flap_burgandy.png";
 import Paper from "../assets/paper_2.jpg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function MainContent() {
     return (
@@ -134,16 +135,16 @@ export default function MainContent() {
                 </div>
             </div>
             {/* Details */}
-            <div className='h-[40rem] w-full white-paper-background relative'>
-                <div className="grid w-full place-items-center mt-8">
-                    <span className="text-[5.5rem] text-red-900 font-[Kapakana] h-17 w-fit mr-[10rem]">
+            <div className='min-h-[40rem] w-full white-paper-background relative'>
+                <div className="grid w-full place-items-center mt-[10rem] lg:mt-8">
+                    <span className="text-[4rem] lg:text-[5.5rem] text-red-900 font-[Kapakana] h-15 lg:h-17 w-fit mr-[4rem] lg:mr-[10rem]">
                         Details
                     </span>
-                    <span className="text-[2.5rem] text-red-900 mb-2 w-fit ml-[10rem]">
-                        you should to know
+                    <span className="text-[2.0rem] lg:text-[2.5rem] text-red-900 mb-2 w-fit ml-[3rem] lg:ml-[10rem]">
+                        you should know
                     </span>
                 </div>
-                <div className="bg-red-900 opacity-40 w-[25rem] h-[25rem] -bottom-6 -right-33 absolute rotate-270"
+                <div className="bg-red-900 opacity-40 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -bottom-6 -right-27 lg:-bottom-6 lg:-right-33 absolute rotate-270"
                     style={{
                         WebkitMaskImage: `url(${VintageFloralCorner})`,
                         maskImage: `url(${VintageFloralCorner})`,
@@ -151,7 +152,7 @@ export default function MainContent() {
                         maskRepeat: 'no-repeat'
                     }}
                 />
-                <div className="bg-red-900 opacity-40 w-[25rem] h-[25rem] -top-6 -left-33 absolute rotate-90"
+                <div className="bg-red-900 opacity-40 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -top-6 -left-27 lg:-top-6 lg:-left-33 absolute rotate-90"
                     style={{
                         WebkitMaskImage: `url(${VintageFloralCorner})`,
                         maskImage: `url(${VintageFloralCorner})`,
@@ -169,28 +170,30 @@ export default function MainContent() {
                     backgroundRepeat: 'no-repeat',
                 }}
             >
-                <motion.div className="h-[13rem] w-[21rem] relative" whileHover={{ scale: 1.05 }}>
-                        <img 
-                            src={EnvelopeTopFlap} 
-                            alt="Envelope back" 
-                            className="absolute left-1/2 w-[20rem] -translate-x-1/2 object-contain drop-shadow-2xl z-10" 
-                            style={{
-                            filter: 'hue-rotate(-10deg) sepia(0.3) saturate(2.0) brightness(0.8)',
-                            }}
-                        />
-                        
-                        <img 
-                            src={EnvelopeFlap} 
-                            alt="Envelope front" 
-                            className="absolute w-[21rem] top-0 object-contain z-5 pointer-events-none" 
-                            style={{
+                    <Link to="/rsvp" aria-label="RSVP">
+                        <motion.div className="text-amber-100 h-[13rem] w-[21rem] relative" whileHover={{ scale: 1.05 }}>
+                            <img 
+                                src={EnvelopeTopFlap} 
+                                alt="Envelope back" 
+                                className="absolute left-1/2 w-[20rem] -translate-x-1/2 object-contain drop-shadow-2xl z-10" 
+                                style={{
                                 filter: 'hue-rotate(-10deg) sepia(0.3) saturate(2.0) brightness(0.8)',
-                            }}
-                        />
-                        <div className="text-xl absolute left-0 right-0 text-center m-auto w-[12rem] h-[8rem] flex justify-center items-center z-20">
-                            <span className="mr-2 pb-1">RSVP</span> <span className="font-[Kapakana]">Here</span>
-                        </div>
-                </motion.div>
+                                }}
+                            />
+                            
+                            <img 
+                                src={EnvelopeFlap} 
+                                alt="Envelope front" 
+                                className="absolute w-[21rem] top-0 object-contain z-5 pointer-events-none" 
+                                style={{
+                                    filter: 'hue-rotate(-10deg) sepia(0.3) saturate(2.0) brightness(0.8)',
+                                }}
+                            />
+                            <div className="text-xl absolute left-0 right-0 text-center m-auto w-[12rem] h-[8rem] flex justify-center items-center z-20">
+                                <p className="mr-2 pb-1 font-[Kapakana] text-[1.6rem] w-full">Click me</p> <p className="text-[1.2rem] w-full">to RSVP</p>
+                            </div>
+                        </motion.div>
+                    </Link>
 
             </div>
             {/* Countdown */}
