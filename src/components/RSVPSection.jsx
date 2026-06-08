@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import EnvelopeTopFlap from "../assets/envelope_top_flap_burgandy.png";
 import EnvelopeFlap from "../assets/envelope_flap_burgandy.png";
+import Bow from "../assets/bow.png";
 
 export default function RSVPSection() {
     return (
@@ -32,9 +33,14 @@ export default function RSVPSection() {
                             filter: 'hue-rotate(-10deg) sepia(0.3) saturate(2.0) brightness(0.8)',
                         }}
                     />
-                    <div className="text-xl absolute left-0 right-0 text-center m-auto w-[12rem] h-[8rem] flex justify-center items-center z-20">
-                        <p className="mr-2 pb-1 font-[Kapakana] text-[1.6rem] w-full">Click me</p>
-                        <p className="text-[1.2rem] w-full">to RSVP</p>
+                    <img
+                        src={Bow}
+                        alt="Bow"
+                        className="absolute w-[6rem] left-0 right-0 m-auto top-28 object-contain z-15 pointer-events-none"
+                    />
+                    <div className="text-xl absolute left-0 right-0 text-center m-auto w-[12rem] h-[8rem] flex flex-col justify-center items-center z-20">
+                        <p className="mr-2 pb-1 font-[Kapakana] text-[2.2rem] -mb-6 pr-[2rem]">Click me</p>
+                        <p className="text-[1.4rem] pl-[2rem]">to RSVP</p>
                     </div>
                 </motion.div>
             </Link>

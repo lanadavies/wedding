@@ -1,4 +1,5 @@
 import VintageFloralCorner from "../assets/vintage_frame_set_10.png";
+import VintageFrame from "../assets/vintage_full_frame_4.png";
 
 export default function DetailsSection() {
     return (
@@ -29,6 +30,28 @@ export default function DetailsSection() {
                     maskRepeat: 'no-repeat'
                 }}
             />
+            <div className="flex text-red-900 justify-center items-center mt-12 gap-12 flex-col lg:flex-row">
+                <div className="flex relative">
+                    <div className="">
+                        Dress code
+                    </div>
+                    <div className="">
+                        Children
+                    </div>
+                    <div className="">
+                        Parking & Transport
+                    </div>
+                    <div className="">
+                        Location
+                    </div>
+                    <div className="">
+                        After Party
+                    </div>
+                </div>
+                <div className="flex"></div>
+                <div className="flex"></div>
+                <div className="flex"></div>
+            </div>
         </div>
     );
 }
