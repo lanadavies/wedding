@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Monogram from "./Monogram";
-
-// Assuming these are placed in your assets folder
 import EnvelopeBackImg from "../assets/envelope_back.png";
 import EnvelopeTopFlapImg from "../assets/envelope_top.png";
 import EnvelopeBottomFlapImg from "../assets/envelope_flap.png";
-import PaperImg from "../assets/paper.jpg";
 import WaxStampImg from "../assets/wax_seal.png";
 
 

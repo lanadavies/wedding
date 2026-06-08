@@ -2,8 +2,14 @@ import MontsalvatImage from "../assets/montsalvat_background.jpg";
 import FloralCornerImage from "../assets/vintage_frame_2_05.png";
 import ImageBorder from "../assets/vintage_frame_15.png";
 import VintageFrameBorder from "../assets/vintage_frame_set_16.png";
-import RenaissanceBackground from "../assets/renaissance_background_2.jpg";
+import VintageFloralCorner from "../assets/vintage_frame_set_10.png";
+import RenaissanceBackground2 from "../assets/renaissance_background_2.jpg";
+import RenaissanceBackground3 from "../assets/renaissance_background_3.jpg";
 import VintageFrame from "../assets/vintage_frame.png";
+import EnvelopeTopFlap from "../assets/envelope_top_flap_burgandy.png";
+import EnvelopeFlap from "../assets/envelope_flap_burgandy.png";
+import Paper from "../assets/paper_2.jpg";
+import { motion } from "framer-motion";
 
 export default function MainContent() {
     return (
@@ -30,7 +36,7 @@ export default function MainContent() {
             </div>
             {/* Introduction */}
             <div className="relative justify-evenly px-8 py-[8rem] flex lg:flex-row flex-col-reverse items-center max-w-full w-full max-w-3xl">
-                <div className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-80 h-[15rem] lg:h-[22rem] my-5 absolute -bottom-14 lg:-bottom-25 -left-10 lg:-left-15"
+                <div className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-90 h-[15rem] lg:h-[22rem] my-5 absolute -bottom-14 lg:-bottom-25 -left-10 lg:-left-15"
                     style={{
                         WebkitMaskImage: `url(${FloralCornerImage})`,
                         maskImage: `url(${FloralCornerImage})`,
@@ -82,14 +88,10 @@ export default function MainContent() {
 
                 </div>
             </div>
-            {/* Details */}
-            <div class='h-[20rem] bg-amber-100 w-full burgendy-paper-background'>
-
-            </div>
             {/* Schedule */}
             <div className="relative flex-col px-8 py-[8rem] flex items-center max-w-full w-full max-w-3xl"
                 style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${RenaissanceBackground})`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${RenaissanceBackground2})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -132,21 +134,70 @@ export default function MainContent() {
                 </div>
             </div>
             {/* Details */}
-            <div class='h-[20rem] bg-amber-100 w-full burgendy-paper-background'>
+            <div className='h-[40rem] w-full white-paper-background relative'>
+                <div className="grid w-full place-items-center mt-8">
+                    <span className="text-[5.5rem] text-red-900 font-[Kapakana] h-17 w-fit mr-[10rem]">
+                        Details
+                    </span>
+                    <span className="text-[2.5rem] text-red-900 mb-2 w-fit ml-[10rem]">
+                        you should to know
+                    </span>
+                </div>
+                <div className="bg-red-900 opacity-40 w-[25rem] h-[25rem] -bottom-6 -right-33 absolute rotate-270"
+                    style={{
+                        WebkitMaskImage: `url(${VintageFloralCorner})`,
+                        maskImage: `url(${VintageFloralCorner})`,
+                        maskSize: 'contain',
+                        maskRepeat: 'no-repeat'
+                    }}
+                />
+                <div className="bg-red-900 opacity-40 w-[25rem] h-[25rem] -top-6 -left-33 absolute rotate-90"
+                    style={{
+                        WebkitMaskImage: `url(${VintageFloralCorner})`,
+                        maskImage: `url(${VintageFloralCorner})`,
+                        maskSize: 'contain',
+                        maskRepeat: 'no-repeat'
+                    }}
+                />
+            </div>
+            {/* RSVP paper on photo background */}
+            <div className='h-[25rem] w-full grid place-items-center'
+                            style={{
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://static.showit.co/2400/HQomN8EVqQuR7DyRn2_FKA/shared/storybook-couple-garden-walk-shauna-maxwell-photography.jpg)`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                }}
+            >
+                <motion.div className="h-[13rem] w-[21rem] relative" whileHover={{ scale: 1.05 }}>
+                        <img 
+                            src={EnvelopeTopFlap} 
+                            alt="Envelope back" 
+                            className="absolute left-1/2 w-[20rem] -translate-x-1/2 object-contain drop-shadow-2xl z-10" 
+                            style={{
+                            filter: 'hue-rotate(-10deg) sepia(0.3) saturate(2.0) brightness(0.8)',
+                            }}
+                        />
+                        
+                        <img 
+                            src={EnvelopeFlap} 
+                            alt="Envelope front" 
+                            className="absolute w-[21rem] top-0 object-contain z-5 pointer-events-none" 
+                            style={{
+                                filter: 'hue-rotate(-10deg) sepia(0.3) saturate(2.0) brightness(0.8)',
+                            }}
+                        />
+                        <div className="text-xl absolute left-0 right-0 text-center m-auto w-[12rem] h-[8rem] flex justify-center items-center z-20">
+                            <span className="mr-2 pb-1">RSVP</span> <span className="font-[Kapakana]">Here</span>
+                        </div>
+                </motion.div>
 
             </div>
-            {/* RSVP paper on photo backgroun*/}
-            <div class='h-[20rem] w-full grid place-items-center'>
-                    <div className="bg-amber-100 opacity-80 w-[15rem] h-[15rem] rounded-full"
-                        style={{
-                            WebkitMaskImage: `url(${VintageFrame})`,
-                            maskImage: `url(${VintageFrame})`,
-                            maskSize: 'contain',
-                            maskRepeat: 'no-repeat'
-                        }}
-                    />
+            {/* Countdown */}
+            <div className='h-[20rem] w-full relative'
+            >
+                countdown
             </div>
-            {/* coundown */}
         </div>
     );
 }
