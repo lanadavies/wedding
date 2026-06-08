@@ -33,7 +33,7 @@ function Home() {
 					key="content-view"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
-					className="min-h-screen w-full overflow-y-auto"
+					className="min-h-screen w-full overflow-y-auto overflow-x-hidden"
 				>
 					<NavBar />
 					<MainContent />
