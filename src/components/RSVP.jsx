@@ -145,7 +145,7 @@ export default function RSVP() {
             Submit RSVP
           </button>
         </form>
-        <div className="bg-amber-100 opacity-80 w-[20rem] h-[6rem]"
+        <div className="bg-amber-100 opacity-80 w-[20rem] h-[6rem] rotate-180"
                     style={{
                         WebkitMaskImage: `url(${VintageFrameBorder})`,
                         maskImage: `url(${VintageFrameBorder})`,
