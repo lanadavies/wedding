@@ -55,7 +55,7 @@ export default function DetailsSection() {
 			/>
 			<div className="grid gap-6 text-center px-6 py-12 lg:grid-cols-5 xl:px-12 text-amber-50">
 				{details.map((item) => (
-					<div key={item.title} className="rounded-[50%] border bg-red-900 p-6 backdrop-blur-xl shadow-xl">
+					<div key={item.title} className="rounded-[10rem] border bg-red-950 p-6 backdrop-blur-xl shadow-xl flex flex-col items-center justify-center">
 						<h3 className="mb-4 text-xl uppercase tracking-[0.18em] text-amber-100">{item.title}</h3>
 						<p className="text-sm leading-6">{item.content}</p>
 					</div>
