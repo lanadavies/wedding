@@ -8,11 +8,11 @@ const details = [
 	},
 	{
 		title: "Children",
-		content: "Although we love our little ones, our celebration is adults only.",
+		content: "Although we love our little ones, our celebration is adults only. We hope you can arrange babysitting.",
 	},
 	{
 		title: "Parking & Transport",
-		content: "On-site parking is available at Montsalvat.",
+		content: "On-site parking is available at Montsalvat. The closest train station is Eltham.",
 	},
 	{
 		title: "When to arrive?",
@@ -20,7 +20,7 @@ const details = [
 	},
 	{
 		title: "After Party",
-		content: "Join us after dinner for late-night cocktails and snacks from 10:00 PM onward at Bar Conexão. We will arrange transport for those who would like to attend, so please let us know if you plan to join the after party when you RSVP.",
+		content: "Party on from 10:00 PM onward at Bar Conexão. We will arrange transport for those who would like to attend.",
 	},
 ];
 
