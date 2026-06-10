@@ -4,6 +4,7 @@ import ScheduleSection from "./ScheduleSection";
 import DetailsSection from "./DetailsSection";
 import RSVPSection from "./RSVPSection";
 import CountdownSection from "./CountdownSection";
+import ContactSection from "./ContactSection";
 
 export default function MainContent() {
     return (
@@ -14,6 +15,7 @@ export default function MainContent() {
             <DetailsSection />
             <RSVPSection />
             <CountdownSection />
+            {/* <ContactSection /> */}
         </div>
     );
 }

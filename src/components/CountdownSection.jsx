@@ -25,24 +25,24 @@ export default function CountdownSection() {
     }, []);
 
     return (
-        <div className='h-[16rem] w-full relative flex items-center justify-center'>
-            <div className='text-center text-amber-100 max-w-3xl w-[30rem]'>
-                <p className='text-[5rem] font-[Kapakana]'>August 8th</p>
-                <div className='grid grid-cols-2 sm:grid-cols-4 text-left sm:text-center'>
+        <div className='my-12 mx-15 w-full relative flex items-center justify-center'>
+            <div className='text-center text-amber-100 max-w-3xl w-[20rem] lg:w-[30rem]'>
+                <p className='text-2xl mb-5 uppercase'>the countdown is on</p>
+                <div className='grid grid-cols-4 text-left sm:text-center px-2'>
                     <div>
-                        <p className='text-5xl font-bold'>{timeLeft.days}</p>
+                        <p className='text-3xl lg:text-5xl font-semibold'>{timeLeft.days}</p>
                         <p className='uppercase text-sm tracking-widest'>Days</p>
                     </div>
                     <div>
-                        <p className='text-5xl font-bold'>{String(timeLeft.hours).padStart(2, "0")}</p>
+                        <p className='text-3xl lg:text-5xl font-semibold'>{String(timeLeft.hours).padStart(2, "0")}</p>
                         <p className='uppercase text-sm tracking-widest'>Hours</p>
                     </div>
                     <div>
-                        <p className='text-5xl font-bold'>{String(timeLeft.minutes).padStart(2, "0")}</p>
+                        <p className='text-3xl lg:text-5xl font-semibold'>{String(timeLeft.minutes).padStart(2, "0")}</p>
                         <p className='uppercase text-sm tracking-widest'>Minutes</p>
                     </div>
                     <div>
-                        <p className='text-5xl font-bold'>{String(timeLeft.seconds).padStart(2, "0")}</p>
+                        <p className='text-3xl lg:text-5xl font-semibold'>{String(timeLeft.seconds).padStart(2, "0")}</p>
                         <p className='uppercase text-sm tracking-widest'>Seconds</p>
                     </div>
                 </div>

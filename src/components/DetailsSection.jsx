@@ -1,6 +1,29 @@
 import VintageFloralCorner from "../assets/vintage_frame_set_10.png";
 import LaceFrame from "../assets/lace_frame.png";
 
+const details = [
+	{
+		title: "Dress Code",
+		content: "Black Tie Optional. \n Please keep in mind that it may be chilly, so we recommend bringing a wrap or jacket",
+	},
+	{
+		title: "Children",
+		content: "Although we love our little ones, our celebration is adults only.",
+	},
+	{
+		title: "Parking & Transport",
+		content: "On-site parking is available at Montsalvat.",
+	},
+	{
+		title: "When to arrive?",
+		content: "Please arrive at 2:30pm to allow time for parking and settling in before the ceremony begins at 3:00pm.",
+	},
+	{
+		title: "After Party",
+		content: "Join us after dinner for late-night cocktails and snacks from 10:00 PM onward at Bar Conexão. We will arrange transport for those who would like to attend, so please let us know if you plan to join the after party when you RSVP.",
+	},
+];
+
 export default function DetailsSection() {
 	return (
 		<div className='min-h-[40rem] w-full white-paper-background relative'>
@@ -30,36 +53,13 @@ export default function DetailsSection() {
 					maskRepeat: 'no-repeat'
 				}}
 			/>
-			<div className="flex text-red-900 justify-center items-center mt-12 gap-12 flex-col lg:flex-row">
-				<div className="flex">
-                    <div className="relative w-[30rem] h-[30rem]">
-                        <div
-                            className="bg-red-900 opacity-90 w-[235px] h-[330px] absolute pt-5 inset-0 m-auto rotate-90"
-                            style={{
-                                WebkitMaskImage: `url(${LaceFrame})`,
-                                maskImage: `url(${LaceFrame})`,
-                                maskSize: 'contain',
-                                maskRepeat: 'no-repeat'
-                            }}
-                        ></div>
-                        <div className="bg-red-900 rounded-[50%] w-[250px] h-[150px] absolute inset-0 m-auto">
-                            Dress code
-                        </div>
-                    </div>
-                </div>
-
-				<div className="">
-					Children
-				</div>
-				<div className="">
-					Parking & Transport
-				</div>
-				<div className="">
-					Location
-				</div>
-				<div className="">
-					After Party
-				</div>
+			<div className="grid gap-6 text-center px-6 py-12 lg:grid-cols-5 xl:px-12 text-amber-50">
+				{details.map((item) => (
+					<div key={item.title} className="rounded-[50%] border bg-red-900 p-6 backdrop-blur-xl shadow-xl">
+						<h3 className="mb-4 text-xl uppercase tracking-[0.18em] text-amber-100">{item.title}</h3>
+						<p className="text-sm leading-6">{item.content}</p>
+					</div>
+				))}
 			</div>
 		</div>
 	);
