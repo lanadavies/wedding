@@ -4,19 +4,15 @@ import LaceFrame from "../assets/lace_frame.png";
 const details = [
 	{
 		title: "Dress Code",
-		content: "Black Tie Optional. \n Please keep in mind that it may be chilly, so we recommend bringing a wrap or jacket",
+		content: "Black Tie Optional. \n Please keep in mind that it may be chilly, so we recommend bringing a wrap or jacket.",
 	},
 	{
 		title: "Children",
 		content: "Although we love our little ones, our celebration is adults only. We hope you can arrange babysitting.",
 	},
 	{
-		title: "Parking & Transport",
-		content: "On-site parking is available at Montsalvat. The closest train station is Eltham.",
-	},
-	{
-		title: "When to arrive?",
-		content: "Please arrive at 2:30pm to allow time for parking and settling in before the ceremony begins at 3:00pm.",
+		title: "Arriving at Montsalvat",
+		content: "Please arrive at 2:30pm to allow time for parking and settling in before the ceremony begins at 3:00pm. On-site parking is available at Montsalvat. The closest train station is Eltham.",
 	},
 	{
 		title: "After Party",
@@ -27,7 +23,7 @@ const details = [
 export default function DetailsSection() {
 	return (
 		<div className='min-h-[40rem] w-full white-paper-background relative'>
-			<div className="grid w-full text-[#552021] place-items-center mt-[10rem] lg:mt-8">
+			<div className="grid w-full text-[#552021] place-items-center mt-[12rem] lg:mt-8">
 				<span className="text-[4rem] lg:text-[5.5rem] font-[Kapakana] h-15 lg:h-17 w-fit mr-[4rem] lg:mr-[10rem]">
 					Details
 				</span>
@@ -53,10 +49,10 @@ export default function DetailsSection() {
 					maskRepeat: 'no-repeat'
 				}}
 			/>
-			<div className="grid lg:grid-cols-2 grid-cols-1 gap-4 text-center lg:mx-[10rem] px-[8rem] py-12 xl:px-12 text-[#2a1d0f]">
+			<div className="grid lg:grid-cols-2 grid-cols-1 gap-4 text-center lg:mx-[10rem] mt-[3rem] mb-[7rem] lg:px-12 text-[#2a1d0f]">
 				{details.map((item) => (
 					<div key={item.title} className=" p-6 flex flex-col items-center justify-center">
-						<h3 className="mb-4 text-xl uppercase tracking-[0.18em]">{item.title}</h3>
+						<h3 className="mb-4 text-xl uppercase tracking-[0.18em] font-medium">{item.title}</h3>
 						<p className=" leading-6">{item.content}</p>
 					</div>
 				))}

@@ -3,7 +3,7 @@ import ImageBorder from "../assets/vintage_frame_15.png";
 
 export default function IntroductionSection() {
     return (
-        <div className="relative justify-evenly px-8 py-[8rem] flex lg:flex-row flex-col-reverse items-center max-w-full w-full max-w-3xl">
+        <div className="relative paper-background justify-evenly px-8 py-[8rem] flex lg:flex-row flex-col-reverse items-center max-w-full w-full max-w-3xl">
             <div
                 className="bg-amber-100 w-[15rem] lg:w-[20rem] opacity-80 h-[15rem] lg:h-[22rem] my-5 absolute -bottom-14 lg:-bottom-25 -left-10 lg:-left-15"
                 style={{

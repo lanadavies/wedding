@@ -6,7 +6,7 @@ export default function ScheduleSection() {
         <div
             className="relative flex-col px-8 py-[8rem] flex items-center max-w-full w-full max-w-3xl"
             style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${RenaissanceBackground2})`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://bride-to-be-website-template.my.canva.site/moody-vintage-romance-wedding-website/_assets/media/f491fea3696d5597ccdbe025e549a5a6.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -24,22 +24,22 @@ export default function ScheduleSection() {
                 }}
             />
             <div className="flex justiry-center items-center xt-lg my-4 flex-col lg:flex-row">
-                <div className="m-2 flex flex-col justify-center items-center w-42">
+                <div className="flex flex-col justify-center items-center w-50 h-30 border-b-2 lg:border-b-0 lg:border-r-2 border-dotted">
                     <p className='text-2xl'>3:00 PM</p>
                     <p className='uppercase'>Ceremony</p>
                 </div>
-                <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] w-[10rem] h-[1px] my-3 bg-amber-100"></div>
-                <div className="m-2 flex flex-col justify-center items-center w-42">
+
+                <div className="flex flex-col justify-center items-center w-50 h-30 border-b-2 lg:border-b-0 lg:border-r-2 border-dotted">
                     <p className='text-2xl'>4:00 PM</p>
                     <p className='uppercase'>Cocktail Hour</p>
                 </div>
-                <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] w-[10rem] h-[1px] my-3 bg-amber-100"></div>
-                <div className="m-2 flex flex-col justify-center items-center w-42">
+
+                <div className="flex flex-col justify-center items-center w-50 h-30 border-b-2 lg:border-b-0 lg:border-r-2 border-dotted">
                     <p className='text-2xl'>5:00 PM</p>
-                    <p className='uppercase'>Dinner & Dancing</p>
+                    <p className='uppercase'>Reception</p>
                 </div>
-                <div className="lg:h-[6rem] lg:max-w-[1px] lg:w-[1px] w-[10rem] h-[1px] my-3 bg-amber-100"></div>
-                <div className="mx-2 flex flex-col justify-center items-center w-42">
+
+                <div className="flex flex-col justify-center items-center w-50 h-30">
                     <p className='text-2xl'>10:00 PM</p>
                     <p className='uppercase'>After Party</p>
                 </div>
