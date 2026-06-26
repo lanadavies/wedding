@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import VintageFrameBorder from "../assets/vintage_frame_set_16.png";
 
 export default function RSVP() {
@@ -8,6 +8,10 @@ export default function RSVP() {
   
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault(); 
