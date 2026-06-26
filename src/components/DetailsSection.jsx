@@ -1,5 +1,7 @@
 import VintageFloralCorner from "../assets/vintage_frame_set_10.png";
 import LaceFrame from "../assets/lace_frame.png";
+import Tape from "../assets/scotch.png";
+import Flower from "../assets/flower.png";
 
 const details = [
 	{
@@ -49,7 +51,9 @@ export default function DetailsSection() {
 					maskRepeat: 'no-repeat'
 				}}
 			/>
-			<div className="grid lg:grid-cols-2 grid-cols-1 gap-4 text-center lg:mx-[10rem] mt-[3rem] mb-[7rem] lg:px-12 text-[#2a1d0f]">
+			<img src={Tape} className="absolute w-[6rem] left-0 lg:left-30 top-90 object-contain z-5 pointer-events-none" />
+			<img src={Flower} className="absolute w-[6rem] left-0 lg:left-30 top-65 object-contain pointer-events-none" />
+			<div className="grid lg:grid-cols-2 grid-cols-1 gap-4 text-center lg:mx-[10rem] mt-[3rem] mb-[7rem] px-10 lg:px-12 text-[#2a1d0f]">
 				{details.map((item) => (
 					<div key={item.title} className=" p-6 flex flex-col items-center justify-center">
 						<h3 className="mb-4 text-xl uppercase tracking-[0.18em] font-medium">{item.title}</h3>
