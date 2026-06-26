@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 import EnvelopeTopFlap from "../assets/envelope_top_flap_burgandy.png";
 import EnvelopeFlap from "../assets/envelope_flap_burgandy.png";
 import Bow from "../assets/bow.png";
+import Tape from "../assets/scotch.png";
+import Flower from "../assets/flower.png";
 
 export default function RSVPSection() {
     return (
         <div
-            className='h-[25rem] w-full grid place-items-center lg:bg-position-[100%_40%] bg-cover'
-            style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(pic5.png)`,
-                backgroundRepeat: 'no-repeat',
-            }}
+            className='h-[25rem] w-full grid place-items-center relative'
         >
+			<img src={Flower} className="absolute w-[6rem] left-0 lg:left-110 top-30 object-contain pointer-events-none -rotate-15" />
+            <img src={Tape} className="absolute w-[6rem] left-0 lg:left-110 top-55 object-contain z-5 pointer-events-none -rotate-10" />
             <Link to="/rsvp" aria-label="RSVP">
-                <motion.div className="text-amber-100 h-[13rem] w-[21rem] relative" whileHover={{ scale: 1.05 }}>
+                <motion.div className="text-amber-100 h-[11rem] w-[21rem] relative" whileHover={{ scale: 1.05 }}>
                     <img
                         src={EnvelopeTopFlap}
                         alt="Envelope back"
