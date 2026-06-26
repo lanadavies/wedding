@@ -11,8 +11,8 @@ export default function RSVPSection() {
         <div
             className='h-[25rem] w-full grid place-items-center relative'
         >
-			<img src={Flower} className="absolute w-[6rem] left-0 lg:left-110 top-30 object-contain pointer-events-none -rotate-15" />
-            <img src={Tape} className="absolute w-[6rem] left-0 lg:left-110 top-55 object-contain z-5 pointer-events-none -rotate-10" />
+			<img src={Flower} className="absolute w-[6rem] left-0 lg:left-110 top-30 object-contain z-25 pointer-events-none -rotate-15" />
+            <img src={Tape} className="absolute w-[6rem] left-0 lg:left-110 top-55 object-contain z-50 pointer-events-none -rotate-10" />
             <Link to="/rsvp" aria-label="RSVP">
                 <motion.div className="text-amber-100 h-[11rem] w-[21rem] relative" whileHover={{ scale: 1.05 }}>
                     <img
