@@ -25,13 +25,13 @@ export default function CountdownSection() {
     }, []);
 
     return (
-        <div className='my-12 h-[25rem] mx-15 w-full relative flex items-center justify-center lg:bg-position-[100%_30%] bg-cover'
+        <div className='my-12 h-[25rem] mx-15 w-full relative flex items-center justify-center bg-center bg-cover'
             style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(pic5.png)`,
                 backgroundRepeat: 'no-repeat',
             }}>
             <div className='text-center text-amber-100 max-w-3xl w-[22rem] lg:w-[30rem]'>
-                <p className='text-[3rem] mb-5 font-[Ballet]'>Happily ever after starts in...</p>
+                <p className='text-[2.2rem] lg:text-[3rem] mb-5 font-[Ballet]'>Happily ever after starts in...</p>
                 <div className='grid grid-cols-4 text-left sm:text-center px-2'>
                     <div className='flex flex-col justify-center items-center'>
                         <p className='text-5xl font-semibold'>{timeLeft.days}</p>

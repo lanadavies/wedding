@@ -7,6 +7,10 @@ const details = [
 		content: "Black Tie Optional. \n Please keep in mind that it may be chilly, so we recommend bringing a wrap or jacket.",
 	},
 	{
+		title: "Gifting",
+		content: "We are so lucky to already have everything we need for our home! If you would like to give a gift, a wishing well will be available on the night to help us build our future together.",
+	},
+	{
 		title: "Children",
 		content: "Although we love our little ones, our celebration is adults only. We hope you can arrange babysitting.",
 	},
@@ -16,7 +20,7 @@ const details = [
 	},
 	{
 		title: "After Party",
-		content: "Party on from 10:00 PM onward at Bar Conexão. We will arrange transport for those who would like to attend.",
+		content: "Party on from 10:00 PM onward at Bar Conexão (5 minutes from Montsalvat). We will arrange transport for those who would like to attend.",
 	},
 ];
 
@@ -24,7 +28,7 @@ export default function DetailsSection() {
 	return (
 		<div className='min-h-[40rem] w-full white-paper-background relative'>
 			<div className="grid w-full text-[#552021] place-items-center mt-[5rem] lg:mt-8">
-				<span className="text-[4rem] lg:text-[5.5rem] font-[Kapakana] h-15 lg:h-17 w-fit mr-[4rem] lg:mr-[10rem]">
+				<span className="text-[4.5rem] lg:text-[5.5rem] font-[Kapakana] h-15 lg:h-17 w-fit mr-[4rem] lg:mr-[10rem]">
 					Details
 				</span>
 				<span className="text-[2.0rem] lg:text-[2.5rem] mb-2 w-fit ml-[4rem] lg:ml-[10rem]">
