@@ -15,7 +15,6 @@ export default function MainContent() {
             <DetailsSection />
             <RSVPSection />
             <CountdownSection />
-            {/* <ContactSection /> */}
         </div>
     );
 }

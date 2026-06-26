@@ -31,7 +31,7 @@ export default function IntroductionSection() {
                 <div
                     className="h-[25rem] w-[20rem] inset-0 m-auto absolute"
                     style={{
-                        backgroundImage: `url(https://static.showit.co/1200/s8_Vdu2LHYCuGn40EVsoPQ/334279/wedding-couple-with-flowers.jpg)`,
+                        backgroundImage: `url(pic3.png)`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',
