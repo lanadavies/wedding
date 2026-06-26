@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const targetDate = new Date("2026-08-08T00:00:00");
+const targetDate = new Date("2026-08-08T15:00:00");
 
 function getTimeRemaining() {
     const now = new Date();
