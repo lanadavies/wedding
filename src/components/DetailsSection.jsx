@@ -27,16 +27,16 @@ const details = [
 export default function DetailsSection() {
 	return (
 		<div className='min-h-[40rem] w-full white-paper-background relative'>
-			<div className="grid w-full place-items-center mt-[10rem] lg:mt-8">
-				<span className="text-[4rem] lg:text-[5.5rem] text-red-900 font-[Kapakana] h-15 lg:h-17 w-fit mr-[4rem] lg:mr-[10rem]">
+			<div className="grid w-full text-[#552021] place-items-center mt-[10rem] lg:mt-8">
+				<span className="text-[4rem] lg:text-[5.5rem] font-[Kapakana] h-15 lg:h-17 w-fit mr-[4rem] lg:mr-[10rem]">
 					Details
 				</span>
-				<span className="text-[2.0rem] lg:text-[2.5rem] text-red-900 mb-2 w-fit ml-[3rem] lg:ml-[10rem]">
+				<span className="text-[2.0rem] lg:text-[2.5rem] mb-2 w-fit ml-[3rem] lg:ml-[10rem]">
 					you should know
 				</span>
 			</div>
 			<div
-				className="bg-red-900 opacity-40 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -bottom-6 -right-27 lg:-bottom-6 lg:-right-33 absolute rotate-270"
+				className="bg-[#552021] opacity-40 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -bottom-6 -right-27 lg:-bottom-6 lg:-right-33 absolute rotate-270"
 				style={{
 					WebkitMaskImage: `url(${VintageFloralCorner})`,
 					maskImage: `url(${VintageFloralCorner})`,
@@ -45,7 +45,7 @@ export default function DetailsSection() {
 				}}
 			/>
 			<div
-				className="bg-red-900 opacity-40 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -top-6 -left-27 lg:-top-6 lg:-left-33 absolute rotate-90"
+				className="bg-[#552021] opacity-40 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -top-6 -left-27 lg:-top-6 lg:-left-33 absolute rotate-90"
 				style={{
 					WebkitMaskImage: `url(${VintageFloralCorner})`,
 					maskImage: `url(${VintageFloralCorner})`,
@@ -53,11 +53,11 @@ export default function DetailsSection() {
 					maskRepeat: 'no-repeat'
 				}}
 			/>
-			<div className="grid gap-6 text-center px-6 py-12 lg:grid-cols-5 xl:px-12 text-amber-50">
+			<div className="grid lg:grid-cols-2 grid-cols-1 gap-4 text-center lg:mx-[10rem] px-[8rem] py-12 xl:px-12 text-[#2a1d0f]">
 				{details.map((item) => (
-					<div key={item.title} className="rounded-[10rem] border bg-red-950 p-6 backdrop-blur-xl shadow-xl flex flex-col items-center justify-center">
-						<h3 className="mb-4 text-xl uppercase tracking-[0.18em] text-amber-100">{item.title}</h3>
-						<p className="text-sm leading-6">{item.content}</p>
+					<div key={item.title} className=" p-6 flex flex-col items-center justify-center">
+						<h3 className="mb-4 text-xl uppercase tracking-[0.18em]">{item.title}</h3>
+						<p className=" leading-6">{item.content}</p>
 					</div>
 				))}
 			</div>
