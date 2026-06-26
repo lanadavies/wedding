@@ -25,11 +25,11 @@ const details = [
 export default function DetailsSection() {
 	return (
 		<div className='min-h-[40rem] w-full white-paper-background relative'>
-			<div className="grid w-full text-[#552021] place-items-center mt-[12rem] lg:mt-8">
+			<div className="grid w-full text-[#552021] place-items-center mt-[5rem] lg:mt-8">
 				<span className="text-[4rem] lg:text-[5.5rem] font-[Kapakana] h-15 lg:h-17 w-fit mr-[4rem] lg:mr-[10rem]">
 					Details
 				</span>
-				<span className="text-[2.0rem] lg:text-[2.5rem] mb-2 w-fit ml-[3rem] lg:ml-[10rem]">
+				<span className="text-[2.0rem] lg:text-[2.5rem] mb-2 w-fit ml-[4rem] lg:ml-[10rem]">
 					you should know
 				</span>
 			</div>
@@ -42,7 +42,7 @@ export default function DetailsSection() {
 					maskRepeat: 'no-repeat'
 				}}
 			/>
-			<div
+			{/* <div
 				className="bg-[#552021] opacity-40 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -top-6 -left-27 lg:-top-6 lg:-left-33 absolute rotate-90"
 				style={{
 					WebkitMaskImage: `url(${VintageFloralCorner})`,
@@ -50,9 +50,9 @@ export default function DetailsSection() {
 					maskSize: 'contain',
 					maskRepeat: 'no-repeat'
 				}}
-			/>
-			<img src={Tape} className="absolute w-[6rem] left-0 lg:left-30 top-90 object-contain z-5 pointer-events-none" />
-			<img src={Flower} className="absolute w-[6rem] left-0 lg:left-30 top-65 object-contain pointer-events-none" />
+			/> */}
+			<img src={Tape} className="absolute w-[6rem] left-0 lg:left-30 top-60 lg:top-90 object-contain z-5 pointer-events-none" />
+			<img src={Flower} className="absolute w-[6rem] left-0 lg:left-30 top-35 lg:top-65 object-contain pointer-events-none" />
 			<div className="grid lg:grid-cols-2 grid-cols-1 gap-4 text-center lg:mx-[10rem] mt-[3rem] mb-[7rem] px-10 lg:px-12 text-[#2a1d0f]">
 				{details.map((item) => (
 					<div key={item.title} className=" p-6 flex flex-col items-center justify-center">
