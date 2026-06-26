@@ -1,10 +1,11 @@
 import RenaissanceBackground2 from "../assets/renaissance_background_2.jpg";
 import VintageFrameBorder from "../assets/vintage_frame_set_16.png";
+import VintageFrameBorder2 from "../assets/vintage_frame_set_2_13.png";
 
 export default function ScheduleSection() {
     return (
         <div
-            className="relative flex-col px-8 py-[8rem] flex items-center max-w-full w-full max-w-3xl"
+            className="relative flex-col px-8 py-[70px] flex items-center max-w-full w-full max-w-3xl"
             style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://bride-to-be-website-template.my.canva.site/moody-vintage-romance-wedding-website/_assets/media/f491fea3696d5597ccdbe025e549a5a6.png)`,
                 backgroundSize: 'cover',
@@ -13,14 +14,15 @@ export default function ScheduleSection() {
             }}
         >
             <p className="text-[3rem] font-[Kapakana] h-8">The</p>
-            <p className="text-[3rem] mb-2">Program</p>
+            <p className="text-[3rem] mb-0">Program</p>
             <div
-                className="bg-amber-100 opacity-80 w-[12rem] h-[6rem]"
+                className="bg-amber-100 opacity-80 w-[300px] h-[100px] rotate-180 ml-4"
                 style={{
-                    WebkitMaskImage: `url(${VintageFrameBorder})`,
-                    maskImage: `url(${VintageFrameBorder})`,
+                    WebkitMaskImage: `url(${VintageFrameBorder2})`,
+                    maskImage: `url(${VintageFrameBorder2})`,
                     maskSize: 'contain',
-                    maskRepeat: 'no-repeat'
+                    maskRepeat: 'no-repeat',
+                    maskPosition: 'center'
                 }}
             />
             <div className="flex justiry-center items-center xt-lg my-4 flex-col lg:flex-row">
