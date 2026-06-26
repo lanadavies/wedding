@@ -7,11 +7,9 @@ import Bow from "../assets/bow.png";
 export default function RSVPSection() {
     return (
         <div
-            className='h-[25rem] w-full grid place-items-center'
+            className='h-[25rem] w-full grid place-items-center lg:bg-position-[100%_40%] bg-cover'
             style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(pic5.png)`,
-                backgroundSize: 'cover',
-                backgroundPosition: '0% 40%',
                 backgroundRepeat: 'no-repeat',
             }}
         >
