@@ -78,8 +78,6 @@ button:focus-visible {
 }
 
 .white-paper-background {
-  /* background-position: 50% 50%; */
-  background-size: 800px 1800px;
   background-repeat: repeat;
   background-image: linear-gradient(rgba(159, 146, 0, 0.01), rgba(159, 146, 0, 0.01)), url("/white_paper.jpg");
 }

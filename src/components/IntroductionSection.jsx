@@ -31,7 +31,7 @@ export default function IntroductionSection() {
                 <div
                     className="h-[25rem] w-[20rem] inset-0 m-auto absolute"
                     style={{
-                        backgroundImage: `url(pic3.png)`,
+                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(pic3.png)`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',
