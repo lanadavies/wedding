@@ -16,7 +16,7 @@ export default function ScheduleSection() {
             <p className="text-[3rem] font-[Kapakana] h-8">The</p>
             <p className="text-[3rem] mb-0">Program</p>
             <div
-                className="bg-amber-100 opacity-80 w-[300px] h-[100px] rotate-180 ml-4"
+                className="bg-amber-100 opacity-80 w-[300px] h-[100px] rotate-180 -mt-4 ml-4"
                 style={{
                     WebkitMaskImage: `url(${VintageFrameBorder2})`,
                     maskImage: `url(${VintageFrameBorder2})`,
