@@ -7,7 +7,7 @@ export default function ScheduleSection() {
         <div
             className="relative flex-col px-8 py-[70px] flex items-center max-w-full w-full max-w-3xl"
             style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://bride-to-be-website-template.my.canva.site/moody-vintage-romance-wedding-website/_assets/media/f491fea3696d5597ccdbe025e549a5a6.png)`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/montsalvat.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
