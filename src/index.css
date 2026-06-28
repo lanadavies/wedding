@@ -79,5 +79,5 @@ button:focus-visible {
 
 .white-paper-background {
   background-repeat: repeat;
-  background-image: linear-gradient(rgba(159, 146, 0, 0.01), rgba(159, 146, 0, 0.01)), url("/white_paper.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("/white_paper.webp");
 }
