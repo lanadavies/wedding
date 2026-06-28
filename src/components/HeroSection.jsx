@@ -12,7 +12,7 @@ export default function HeroSection() {
             <motion.p 
                 initial={{ opacity: 0, filter: "blur(12px)", scale: 0.95 }}
                 animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
-                transition={{ duration: 3, ease: "easeOut" }}
+                transition={{ duration: 2, ease: "easeOut" }}
                 className="lg:text-[4rem] mx-6 text-center text-[5rem] font-[Ballet] mb-6"
             >
                 Allana & Dylan
@@ -22,7 +22,7 @@ export default function HeroSection() {
             <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 3, ease: "easeOut" }}
+                transition={{ duration: 1, delay: 2, ease: "easeOut" }}
                 className="lg:text-3xl text-2xl mb-4 uppercase font-[EB_Garamond]"
             >
                 Are getting married
@@ -32,7 +32,7 @@ export default function HeroSection() {
             <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 4, ease: "easeOut" }}
+                transition={{ duration: 1, delay: 3, ease: "easeOut" }}
                 className="bottom-0 absolute lg:text-lg text-md mb-4 uppercase"
             >
                 Montsalvat, Eltham  |  August 8, 2026
