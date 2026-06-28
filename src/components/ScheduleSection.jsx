@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
-import VintageFrameBorder from "../assets/vintage_frame_set_16.png";
 import VintageFrameBorder2 from "../assets/vintage_frame_set_2_13.png";
+import CeremonyIcon from "../assets/ceremony_icon.png";
+import CocktailIcon from "../assets/cocktails_icon.png";
+import ReceptionIcon from "../assets/reception_icon.png";
+import PartyIcon from "../assets/party_icon.png";
 
 export default function ScheduleSection() {
     // 1. Container variants for the staggered timeline
@@ -9,8 +12,8 @@ export default function ScheduleSection() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.15, // Delay between each time slot appearing
-                delayChildren: 0.4,    // Waits for the title to fade in first
+                staggerChildren: 0.3, // Delay between each time slot appearing
+                delayChildren: 0.5,    // Waits for the title to fade in first
             }
         }
     };
@@ -21,7 +24,7 @@ export default function ScheduleSection() {
         visible: { 
             opacity: 1, 
             y: 0, 
-            transition: { duration: 0.6, ease: "easeOut" } 
+            transition: { duration: 0.5, ease: "easeOut" } 
         }
     };
 
@@ -62,30 +65,70 @@ export default function ScheduleSection() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex justify-center items-center text-lg my-4 flex-col lg:flex-row"
+                className="flex justify-center items-center text-lg my-4 flex-col lg:flex-row gap-y-10"
             >
                 {/* 3:00 PM */}
-                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50 h-30 border-b-2 lg:border-b-0 lg:border-r-2 border-dotted">
+                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50">
+                    <div
+                        className="bg-amber-100 w-[200px] h-[200px] my-2"
+                        style={{
+                            WebkitMaskImage: `url(${CeremonyIcon})`,
+                            maskImage: `url(${CeremonyIcon})`,
+                            maskSize: 'contain',
+                            maskRepeat: 'no-repeat',
+                            maskPosition: 'center'
+                        }}
+                    />
                     <p className='text-2xl'>3:00 PM</p>
-                    <p className='uppercase'>Ceremony</p>
+                    <p className='text-[2.2rem] font-[Kapakana] -mt-1'>Ceremony</p>
                 </motion.div>
 
                 {/* 4:00 PM */}
-                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50 h-30 border-b-2 lg:border-b-0 lg:border-r-2 border-dotted">
+                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50">
+                    <div
+                        className="bg-amber-100 w-[200px] h-[200px] my-2"
+                        style={{
+                            WebkitMaskImage: `url(${CocktailIcon})`,
+                            maskImage: `url(${CocktailIcon})`,
+                            maskSize: 'contain',
+                            maskRepeat: 'no-repeat',
+                            maskPosition: 'center'
+                        }}
+                    />
                     <p className='text-2xl'>4:00 PM</p>
-                    <p className='uppercase'>Cocktail Hour</p>
+                    <p className='text-[2.2rem] font-[Kapakana] -mt-1'>Cocktail Hour</p>
                 </motion.div>
 
                 {/* 5:00 PM */}
-                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50 h-30 border-b-2 lg:border-b-0 lg:border-r-2 border-dotted">
+                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-60">
+                    <div
+                        className="bg-amber-100 w-[200px] h-[200px] my-2"
+                        style={{
+                            WebkitMaskImage: `url(${ReceptionIcon})`,
+                            maskImage: `url(${ReceptionIcon})`,
+                            maskSize: 'contain',
+                            maskRepeat: 'no-repeat',
+                            maskPosition: 'center'
+                        }}
+                    />
                     <p className='text-2xl'>5:00 PM</p>
-                    <p className='uppercase'>Reception</p>
+                    <p className='text-[2.2rem] font-[Kapakana] -mt-1'>Dinner & Speeches</p>
                 </motion.div>
 
                 {/* 10:00 PM */}
-                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50 h-30">
-                    <p className='text-2xl'>10:00 PM</p>
-                    <p className='uppercase'>After Party</p>
+                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50">
+                    <div
+                        className="bg-amber-100 w-[200px] h-[200px] my-2"
+                        style={{
+                            WebkitMaskImage: `url(${PartyIcon})`,
+                            maskImage: `url(${PartyIcon})`,
+                            maskSize: 'contain',
+                            maskRepeat: 'no-repeat',
+                            maskPosition: 'center'
+                        }}
+                    />
+                    <p className='text-2xl'>8:00 PM</p>
+                    <p className='text-[2.2rem] font-[Kapakana] -mt-1'>Party Time</p>
                 </motion.div>
             </motion.div>
             
