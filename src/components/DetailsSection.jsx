@@ -1,4 +1,6 @@
 import VintageFloralCorner from "../assets/vintage_frame_set_10.png";
+import Butterfly from "../assets/butterfly.png";
+import Moth from "../assets/moth.png";
 const details = [
 	{
 		title: "Arrival",
@@ -26,7 +28,7 @@ export default function DetailsSection() {
 	return (
 		<div className='min-h-[38rem] w-full white-paper-background relative'>
 			<div
-				className="bg-[#552021] opacity-50 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -bottom-6 -right-27 lg:-bottom-6 lg:-right-33 absolute rotate-270"
+				className="bg-[#552021] opacity-30 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -bottom-6 -right-27 lg:-bottom-6 lg:-right-33 absolute rotate-270"
 				style={{
 					WebkitMaskImage: `url(${VintageFloralCorner})`,
 					maskImage: `url(${VintageFloralCorner})`,
@@ -35,10 +37,28 @@ export default function DetailsSection() {
 				}}
 			/>
 			<div
-				className="bg-[#552021] opacity-50 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -top-6 -left-27 lg:-top-6 lg:-left-33 absolute rotate-90"
+				className="bg-[#552021] opacity-30 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -top-6 -left-27 lg:-top-6 lg:-left-33 absolute rotate-90"
 				style={{
 					WebkitMaskImage: `url(${VintageFloralCorner})`,
 					maskImage: `url(${VintageFloralCorner})`,
+					maskSize: 'contain',
+					maskRepeat: 'no-repeat'
+				}}
+			/>
+			<div
+				className="bg-[#552021] opacity-50 w-[5rem] h-[5rem] lg:w-[8rem] lg:h-[8rem] top-80 right-10 lg:top-30 lg:right-12 absolute rotate-25"
+				style={{
+					WebkitMaskImage: `url(${Moth})`,
+					maskImage: `url(${Moth})`,
+					maskSize: 'contain',
+					maskRepeat: 'no-repeat'
+				}}
+			/>
+			<div
+				className="bg-[#552021] opacity-50 w-[4rem] h-[4rem] lg:w-[8rem] lg:h-[8rem] bottom-118 left-10 lg:top-118 lg:left-10 absolute -rotate-20"
+				style={{
+					WebkitMaskImage: `url(${Butterfly})`,
+					maskImage: `url(${Butterfly})`,
 					maskSize: 'contain',
 					maskRepeat: 'no-repeat'
 				}}
