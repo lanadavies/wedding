@@ -46,7 +46,7 @@ export default function DetailsSection() {
 				}}
 			/>
 			<div
-				className="bg-[#552021] opacity-50 w-[5rem] h-[5rem] lg:w-[8rem] lg:h-[8rem] top-80 right-10 lg:top-30 lg:right-12 absolute rotate-25"
+				className="bg-[#552021] opacity-40 w-[6rem] h-[6rem] lg:w-[8rem] lg:h-[8rem] top-70 right-8 lg:top-30 lg:right-12 absolute rotate-25"
 				style={{
 					WebkitMaskImage: `url(${Moth})`,
 					maskImage: `url(${Moth})`,
@@ -55,7 +55,7 @@ export default function DetailsSection() {
 				}}
 			/>
 			<div
-				className="bg-[#552021] opacity-50 w-[4rem] h-[4rem] lg:w-[8rem] lg:h-[8rem] bottom-118 left-10 lg:top-118 lg:left-10 absolute -rotate-20"
+				className="bg-[#552021] opacity-40 w-[5rem] h-[5rem] lg:w-[8rem] lg:h-[8rem] bottom-127 left-10 lg:top-118 lg:left-10 absolute -rotate-20"
 				style={{
 					WebkitMaskImage: `url(${Butterfly})`,
 					maskImage: `url(${Butterfly})`,
