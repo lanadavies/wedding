@@ -4,7 +4,7 @@ export default function HeroSection() {
     return (
         <div
             style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("DSC_1378.webp")`
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pic1.webp")`
             }}
             className="p-8 lg:mx-[3rem] relative pb-[50px] h-[600px] w-full lg:w-[calc(100%-3rem)] flex flex-col items-center justify-center bg-cover bg-center overflow-hidden"
         >
