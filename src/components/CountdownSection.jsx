@@ -59,14 +59,14 @@ export default function CountdownSection() {
     return (
         <div className='h-[25rem] w-full relative flex items-center justify-center bg-center bg-cover'
             style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(pic3.webp)`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pic3.webp)`,
                 backgroundRepeat: 'no-repeat',
             }}>
             <div className='text-center text-amber-100 max-w-3xl w-[22rem] lg:w-[30rem]'>
                 
                 {/* 3. Wrap the text in motion.p and apply the variants */}
                 <motion.p 
-                    className='text-[2.2rem] lg:text-[3rem] mb-5 font-[Ballet]'
+                    className='text-[2.2rem] lg:text-[3rem] mb-5 font-medium font-[Ballet]'
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"

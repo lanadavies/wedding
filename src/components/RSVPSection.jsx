@@ -9,7 +9,7 @@ import Flower from "../assets/flower.png";
 export default function RSVPSection() {
     return (
         <div
-            className='h-[28rem] w-full grid place-items-center relative mb-5'
+            className='h-[28rem] w-full grid place-items-center relative mb-6'
             style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/montsalvat.webp)`,
                 backgroundSize: 'cover',
