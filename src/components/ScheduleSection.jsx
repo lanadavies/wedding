@@ -115,7 +115,7 @@ export default function ScheduleSection() {
                     className="flex flex-col justify-center items-center w-50"
                 >
                     <div
-                        className="bg-amber-100 w-[200px] h-[200px] my-2"
+                        className="bg-amber-100 w-[150px] h-[150px] my-2"
                         style={{
                             WebkitMaskImage: `url(${PartyIcon})`,
                             maskImage: `url(${PartyIcon})`,

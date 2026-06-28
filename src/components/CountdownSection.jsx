@@ -25,14 +25,14 @@ export default function CountdownSection() {
     }, []);
 
     return (
-        <div className='h-[20rem] w-full relative flex items-center justify-center bg-center bg-cover'
+        <div className='h-[30rem] w-full relative flex items-center justify-center bg-center bg-cover'
             style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pic4.webp)`,
                 backgroundRepeat: 'no-repeat',
             }}>
             <div className='text-center text-amber-100 max-w-3xl w-[22rem] lg:w-[30rem]'>
                 
-                <p className='text-[2.2rem] lg:text-[3rem] mb-5 font-medium font-[Ballet]'>
+                <p className='text-[2.4rem] lg:text-[3rem] mb-5 font-[Ballet]'>
                     Happily ever after starts in...
                 </p>
 
