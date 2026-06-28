@@ -57,9 +57,9 @@ export default function CountdownSection() {
     };
 
     return (
-        <div className='h-[25rem] w-full relative flex items-center justify-center bg-center bg-cover'
+        <div className='h-[20rem] w-full relative flex items-center justify-center bg-center bg-cover'
             style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pic3.webp)`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pic4.webp)`,
                 backgroundRepeat: 'no-repeat',
             }}>
             <div className='text-center text-amber-100 max-w-3xl w-[22rem] lg:w-[30rem]'>
