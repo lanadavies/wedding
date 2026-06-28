@@ -5,7 +5,7 @@ import ImageBorder from "../assets/vintage_frame_15.png";
 export default function IntroductionSection() {
     // 1. Store the text for the typing effect
     const heading = "It's Finally happening";
-    const p1 = "Together with our parents Kathy and Michael Davies, Lexie Brooks and Alan Smith, we invite you to celebrate our marriage. Here you will find all the information you need as we prepare to celebrate our wedding.";
+    const p1 = "Together with our parents Kathy and Michael Davies and Lexie and Alan Smith, we invite you to celebrate our marriage. Here you will find all the information you need as we prepare to celebrate our wedding.";
     const p2 = "Thank you for being a part of our lives, and we can't wait to celebrate with you on our special day.";
 
     // 2. Set up the animation variants

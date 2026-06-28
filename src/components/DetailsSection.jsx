@@ -26,7 +26,7 @@ export default function DetailsSection() {
 	return (
 		<div className='min-h-[40rem] w-full white-paper-background relative'>
 			<div
-				className="bg-[#552021] opacity-40 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -bottom-6 -right-27 lg:-bottom-6 lg:-right-33 absolute rotate-270"
+				className="bg-[#552021] opacity-50 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -bottom-6 -right-27 lg:-bottom-6 lg:-right-33 absolute rotate-270"
 				style={{
 					WebkitMaskImage: `url(${VintageFloralCorner})`,
 					maskImage: `url(${VintageFloralCorner})`,
@@ -35,7 +35,7 @@ export default function DetailsSection() {
 				}}
 			/>
 			<div
-				className="bg-[#552021] opacity-40 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -top-6 -left-27 lg:-top-6 lg:-left-33 absolute rotate-90"
+				className="bg-[#552021] opacity-50 w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] -top-6 -left-27 lg:-top-6 lg:-left-33 absolute rotate-90"
 				style={{
 					WebkitMaskImage: `url(${VintageFloralCorner})`,
 					maskImage: `url(${VintageFloralCorner})`,
