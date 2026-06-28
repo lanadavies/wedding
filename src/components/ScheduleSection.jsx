@@ -6,7 +6,7 @@ export default function ScheduleSection() {
         <div
             className="relative flex-col px-8 py-[70px] flex items-center max-w-full w-full max-w-3xl"
             style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/montsalvat.png)`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/montsalvat.webp)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',

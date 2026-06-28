@@ -27,7 +27,7 @@ export default function CountdownSection() {
     return (
         <div className='my-12 h-[25rem] mx-15 w-full relative flex items-center justify-center bg-center bg-cover'
             style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(pic5.png)`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(pic3.webp)`,
                 backgroundRepeat: 'no-repeat',
             }}>
             <div className='text-center text-amber-100 max-w-3xl w-[22rem] lg:w-[30rem]'>
