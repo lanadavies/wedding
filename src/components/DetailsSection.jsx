@@ -1,12 +1,12 @@
 import VintageFloralCorner from "../assets/vintage_frame_set_10.png";
 const details = [
 	{
-		title: "Arriving at Montsalvat",
-		content: "Please arrive by 2:30 PM to park and settle in before our 3:00 PM ceremony. Montsalvat offers ample on-site parking, at the main entrance (7 Hillcrest Avenue, Eltham).",
+		title: "Arrival",
+		content: "Please arrive by 2:30 PM to park and settle in before our 3:00 PM ceremony. Montsalvat offers ample on-site parking at the main entrance (7 Hillcrest Avenue, Eltham).",
 	},
     {
         title: "Dress Code",
-        content: "Black Tie Optional. \n As the evening air can be quite crisp, we kindly recommend bringing a warm wrap or jacket to stay comfortable.",
+        content: "Black Tie Optional. \n Although the wedding is all in doors, we kindly recommend bringing a warm wrap or jacket to stay comfortable.",
     },
     {
         title: "Gifting",
@@ -48,7 +48,7 @@ export default function DetailsSection() {
 				{details.map((item) => (
 					<div key={item.title} className=" p-6 flex flex-col items-center justify-center">
 						<h3 className="mb-4 text-[2.5rem] font-[Kapakana] font-medium">{item.title}</h3>
-						<p className=" leading-6">{item.content}</p>
+						<p className=" leading-6 whitespace-pre-line">{item.content}</p>
 					</div>
 				))}
 			</div>
