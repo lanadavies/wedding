@@ -4,13 +4,7 @@ import VintageFrameBorder2 from "../assets/vintage_frame_set_2_13.png";
 export default function ScheduleSection() {
     return (
         <div
-            className="relative flex-col px-8 py-[70px] flex items-center max-w-full w-full max-w-3xl"
-            style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/montsalvat.webp)`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-            }}
+            className="relative flex-col px-8 py-[70px] flex items-center max-w-full w-full max-w-3xl paper-background"
         >
             <p className="text-[3rem] font-[Kapakana] h-8">The</p>
             <p className="text-[3rem] mb-0">Program</p>

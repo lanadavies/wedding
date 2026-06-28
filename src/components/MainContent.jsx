@@ -11,10 +11,10 @@ export default function MainContent() {
         <div className="h-full w-full flex flex-col items-center text-amber-100 font-[EB_Garamond]">
             <HeroSection />
             <IntroductionSection />
-            <ScheduleSection />
-            <DetailsSection />
-            <RSVPSection />
             <CountdownSection />
+            <DetailsSection />
+            <ScheduleSection />
+            <RSVPSection />
         </div>
     );
 }
