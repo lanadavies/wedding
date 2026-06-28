@@ -1,5 +1,4 @@
 import VintageFloralCorner from "../assets/vintage_frame_set_10.png";
-import LaceFrame from "../assets/lace_frame.png";
 const details = [
 	{
 		title: "Arriving at Montsalvat",

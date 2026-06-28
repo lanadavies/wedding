@@ -1,4 +1,3 @@
-import RenaissanceBackground2 from "../assets/renaissance_background_2.jpg";
 import VintageFrameBorder from "../assets/vintage_frame_set_16.png";
 import VintageFrameBorder2 from "../assets/vintage_frame_set_2_13.png";
 

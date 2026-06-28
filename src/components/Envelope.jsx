@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Monogram from "./Monogram";
-import EnvelopeBackImg from "../assets/envelope_back.png";
-import EnvelopeTopFlapImg from "../assets/envelope_top.png";
-import EnvelopeBottomFlapImg from "../assets/envelope_flap.png";
-import WaxStampImg from "../assets/wax_seal.png";
+import EnvelopeBackImg from "../assets/envelope_back.webp";
+import EnvelopeTopFlapImg from "../assets/envelope_top.webp";
+import EnvelopeBottomFlapImg from "../assets/envelope_flap.webp";
+import WaxStampImg from "../assets/wax_seal.webp";
 
 
 export default function Envelope({ onComplete }) {
