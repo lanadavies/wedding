@@ -16,7 +16,7 @@ export default function IntroductionSection() {
             <div className="flex flex-col w-[16rem] lg:w-[20rem] mb-5 mt-[4rem] lg:mt-6 text-center lg:text-left">
                 <h2 className="text-3xl font-serif my-4 uppercase">It's Finally happening</h2>
                 <p className="text-lg mb-4 lg:mb-8 mt-4">
-                    Together with our parents Kathy and Mihcarl Davies and Lexie and Alan Brooks Smith invite you to celebrate their marriage. Here you will find all the information you need as we prepare to celebrate our wedding.
+                    Together with our parents Kathy and Michael Davies, Lexie Brooks and Alan Smith, we invite you to celebrate their marriage. Here you will find all the information you need as we prepare to celebrate our wedding.
                     <br />
                     Thank you for being a part of our lives, and we can't wait to celebrate with you on our special day.
                 </p>
