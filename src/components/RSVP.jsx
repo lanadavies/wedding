@@ -61,7 +61,7 @@ export default function RSVP() {
   return (
     <main className="min-h-screen w-full flex items-center justify-center px-6 py-12 text-amber-100 font-[EB_Garamond]">
       <div className="max-w-3xl w-full flex items-center justify-center flex-col text-center">
-        <h1 className="mb-4 text-4xl uppercase tracking-[0.25em]">RSVP</h1>
+        <h1 className="mb-4 text-4xl text-center pl-2 uppercase tracking-[0.25em]">RSVP</h1>
 
         <div className="bg-amber-100 opacity-80 w-[20rem] h-[6rem]"
           style={{
