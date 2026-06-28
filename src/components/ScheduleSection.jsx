@@ -6,28 +6,6 @@ import ReceptionIcon from "../assets/reception_icon.png";
 import PartyIcon from "../assets/party_icon.png";
 
 export default function ScheduleSection() {
-    // 1. Container variants for the staggered timeline
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.3, // Delay between each time slot appearing
-                delayChildren: 0.5,    // Waits for the title to fade in first
-            }
-        }
-    };
-
-    // 2. Variants for each individual time block (slides up slightly)
-    const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { 
-            opacity: 1, 
-            y: 0, 
-            transition: { duration: 0.5, ease: "easeOut" } 
-        }
-    };
-
     return (
         <div className="relative flex-col px-8 py-[70px] flex items-center max-w-full w-full max-w-3xl paper-background">
             
@@ -59,16 +37,17 @@ export default function ScheduleSection() {
                 }}
             />
 
-            {/* Timeline Events - Staggered fade in */}
-            <motion.div 
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                className="flex justify-center items-center text-lg my-4 flex-col lg:flex-row gap-y-10"
-            >
+            {/* Timeline Events Container */}
+            <div className="flex justify-center items-center text-lg my-4 flex-col lg:flex-row gap-y-10">
+                
                 {/* 3:00 PM */}
-                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50">
+                <motion.div 
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.4 }} // Triggers when 40% of this specific block is visible
+                    className="flex flex-col justify-center items-center w-50"
+                >
                     <div
                         className="bg-amber-100 w-[200px] h-[200px] my-2"
                         style={{
@@ -84,7 +63,13 @@ export default function ScheduleSection() {
                 </motion.div>
 
                 {/* 4:00 PM */}
-                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50">
+                <motion.div 
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    className="flex flex-col justify-center items-center w-50"
+                >
                     <div
                         className="bg-amber-100 w-[200px] h-[200px] my-2"
                         style={{
@@ -100,7 +85,13 @@ export default function ScheduleSection() {
                 </motion.div>
 
                 {/* 5:00 PM */}
-                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-60">
+                <motion.div 
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    className="flex flex-col justify-center items-center w-60"
+                >
                     <div
                         className="bg-amber-100 w-[200px] h-[200px] my-2"
                         style={{
@@ -115,8 +106,14 @@ export default function ScheduleSection() {
                     <p className='text-[2.2rem] font-[Kapakana] -mt-1'>Dinner & Speeches</p>
                 </motion.div>
 
-                {/* 10:00 PM */}
-                <motion.div variants={itemVariants} className="flex flex-col justify-center items-center w-50">
+                {/* 8:00 PM */}
+                <motion.div 
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    className="flex flex-col justify-center items-center w-50"
+                >
                     <div
                         className="bg-amber-100 w-[200px] h-[200px] my-2"
                         style={{
@@ -130,8 +127,8 @@ export default function ScheduleSection() {
                     <p className='text-2xl'>8:00 PM</p>
                     <p className='text-[2.2rem] font-[Kapakana] -mt-1'>Party Time</p>
                 </motion.div>
-            </motion.div>
-            
+                
+            </div>
         </div>
     );
 }

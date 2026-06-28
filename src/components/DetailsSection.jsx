@@ -27,28 +27,6 @@ const details = [
 ];
 
 export default function DetailsSection() {
-    // 1. Define the staggered animation for the grid
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.15, // Delay between each item appearing
-                delayChildren: 0.3,
-            }
-        }
-    };
-
-    // 2. Define the animation for each individual detail item (fade and slight slide up)
-    const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { 
-            opacity: 1, 
-            y: 0,
-            transition: { duration: 0.6, ease: "easeOut" }
-        }
-    };
-
     return (
         <div className='min-h-[38rem] w-full white-paper-background relative'>
             
@@ -104,18 +82,15 @@ export default function DetailsSection() {
                 />
             </motion.div>
 
-            {/* Grid Content with Staggered Animation */}
-            <motion.div 
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.1 }} // Triggers when 10% of the grid is visible
-                className="grid lg:grid-cols-2 text-[#552021] tracking-wide grid-cols-1 gap-4 text-center lg:mx-[10rem] mt-[5rem] mb-[7rem] px-10 lg:px-12 text-[#2a1d0f]"
-            >
+            {/* Grid Content with Individual Scroll Triggers */}
+            <div className="grid lg:grid-cols-2 text-[#552021] tracking-wide grid-cols-1 gap-4 text-center lg:mx-[10rem] mt-[5rem] mb-[7rem] px-10 lg:px-12 text-[#2a1d0f]">
                 {details.map((item) => (
                     <motion.div 
-                        key={item.title} 
-                        variants={itemVariants} 
+                        key={item.title}
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.4 }} // Triggers when 40% of this specific block is visible
                         className="p-6 flex flex-col items-center justify-center"
                     >
                         <h3 className="text-[1.8rem] mb-3 uppercase font-medium">{item.title}</h3>
@@ -124,7 +99,7 @@ export default function DetailsSection() {
                         </p>
                     </motion.div>
                 ))}
-            </motion.div>
+            </div>
         </div>
     );
 }
