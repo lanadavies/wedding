@@ -17,10 +17,10 @@ export default function RSVPSection() {
                 backgroundRepeat: 'no-repeat',
             }}
         >
-			<img src={Flower} className="absolute w-[70px] lg:w-[6rem] left-0 lg:left-110 top-42 object-contain z-25 pointer-events-none -rotate-15" />
-            <img src={Tape} className="absolute w-[60px] lg:w-[6rem] left-2 lg:left-110 top-65 object-contain z-50 pointer-events-none -rotate-10" />
             <Link to="/rsvp" aria-label="RSVP">
                 <motion.div className="text-amber-100 h-[11rem] w-[21rem] relative" whileHover={{ scale: 1.05 }}>
+                    <img src={Flower} className="absolute w-[70px] lg:w-[6rem] -left-10 top-10 object-contain z-25 pointer-events-none -rotate-15" />
+                    <img src={Tape} className="absolute w-[60px] lg:w-[6rem] -left-10 top-30 object-contain z-50 pointer-events-none -rotate-10" />
                     <img
                         src={EnvelopeTopFlap}
                         alt="Envelope back"
